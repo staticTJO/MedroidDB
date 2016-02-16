@@ -6,7 +6,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @RooJavaBean
 @RooToString
@@ -20,6 +20,6 @@ public class CareTeam {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "Careteams")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "careteam")
     private Set<Doctor> Doctors = new HashSet<Doctor>();
 }

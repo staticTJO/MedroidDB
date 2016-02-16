@@ -9,7 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
@@ -32,7 +32,7 @@ public class Doctor {
     private Set<DoctorDiagnosis> DoctorDiagnosis = new HashSet<DoctorDiagnosis>();
 
     @NotNull
-    @Column(name = "id", unique = true, insertable = false, updatable = false )
+    @Column(name = "id", unique = true, insertable = false, updatable = false)
     private int doctorID;
 
     /**
@@ -70,6 +70,6 @@ public class Doctor {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<CareTeam> Careteams = new HashSet<CareTeam>();
+    @ManyToOne
+    private CareTeam careteam;
 }

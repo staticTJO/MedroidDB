@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_medroid_domain_CareTeam" modelAttribute="careTeam" path="/careteams" render="${empty dependencies}" z="Lc3W/+rmbs4BYdPPFPM8wzk8RZo=">
         <field:select field="patient" id="c_com_medroid_domain_CareTeam_patient" itemValue="id" items="${patients}" path="/patients" z="TdBbjYm5FROewbInHVskhwyUzC8="/>
-        <field:select field="Doctors" id="c_com_medroid_domain_CareTeam_Doctors" itemValue="id" items="${doctors}" multiple="true" path="/doctors" z="O35Fu8EQ8RK/dvqS5X0q0X3fIMI="/>
+        <field:simple field="Doctors" id="c_com_medroid_domain_CareTeam_Doctors" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor" z="mxYDYS/mkON8GC8Ni/eU8jfNZCw="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_CareTeam" render="${not empty dependencies}" z="AWMBm+X+hrChhYKMhP0o/ELjHM8="/>
 </div>

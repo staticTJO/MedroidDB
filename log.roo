@@ -119,3 +119,9 @@ web mvc setup
 web mvc all --package com.medroid.domain
 web mvc all --package com.medroid.domain
 web mvc all --package com.medroid.domain.web
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-15 22:57:07
+jpa setup --database MYSQL --provider HIBERNATE --databaseName medroidb --userName statictjo --password root
+focus --class ~.domain.CareTeam
+field set --fieldName Doctors --type ~.domain.Doctor --cardinality ONE_TO_MANY --mappedBy CareTeam
+focus --class ~.domain.Doctor
+field reference --fieldName careteam --type ~.domain.CareTeam --cardinality MANY_TO_ONE

@@ -92,12 +92,12 @@ privileged aspect Doctor_Roo_JavaBean {
         this.status = status;
     }
     
-    public Set<CareTeam> Doctor.getCareteams() {
-        return this.Careteams;
+    public CareTeam Doctor.getCareteam() {
+        return this.careteam;
     }
     
-    public void Doctor.setCareteams(Set<CareTeam> Careteams) {
-        this.Careteams = Careteams;
+    public void Doctor.setCareteam(CareTeam careteam) {
+        this.careteam = careteam;
     }
     
 }

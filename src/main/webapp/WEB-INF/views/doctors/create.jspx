@@ -13,7 +13,7 @@
         <field:input field="LastName" id="c_com_medroid_domain_Doctor_LastName" min="3" required="true" z="Zs8F7On8DnmyBNcp6VX2GWWD6h8="/>
         <field:input field="Specialty" id="c_com_medroid_domain_Doctor_Specialty" required="true" z="5qfEJmrqqUgVhstV4/AKMxh8jkY="/>
         <field:input field="status" id="c_com_medroid_domain_Doctor_status" required="true" z="GBDKtlHFjQ6mMBKI3TI74CPZvqk="/>
-        <field:select field="Careteams" id="c_com_medroid_domain_Doctor_Careteams" itemValue="id" items="${careteams}" multiple="true" path="/careteams" z="xBwfEutPqvzsfwqvVpVm/czEU0k="/>
+        <field:select field="careteam" id="c_com_medroid_domain_Doctor_careteam" itemValue="id" items="${careteams}" path="/careteams" z="XjtAIFLnDaM9gsP0gmJH97m5wng="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_Doctor" render="${not empty dependencies}" z="cgJyD93Z8XRaN+9wDA4LstR2i50="/>
 </div>

@@ -4,6 +4,5 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_medroid_domain_CareTeam" object="${careteam}" path="/careteams" z="Yr2Y3CUjA43J5Xwxhrgm/8g8uFY=">
         <field:display field="patient" id="s_com_medroid_domain_CareTeam_patient" object="${careteam}" z="llwepzEZGD43f5JTWAjX1rWMw6A="/>
-        <field:display field="doctors" id="s_com_medroid_domain_CareTeam_Doctors" object="${careteam}" z="mfEdLlFBug2aaIDwevsvuIBfrgQ="/>
     </page:show>
 </div>
