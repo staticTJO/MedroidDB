@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_medroid_domain_DoctorDiagnosis" items="${doctordiagnoses}" z="CmPlx1DahCmxNY4SYdvOda9D7PI=">
+        <table:table data="${doctordiagnoses}" id="l_com_medroid_domain_DoctorDiagnosis" path="/doctordiagnoses" z="mSRWXjSn4O6x5zHHmD8gA4LHclc=">
+            <table:column id="c_com_medroid_domain_DoctorDiagnosis_doctor" property="doctor" z="H/bWF/rnmyjaoCKMIP/vb5mGjbY="/>
+            <table:column id="c_com_medroid_domain_DoctorDiagnosis_patient" property="patient" z="e/aEOhQeMkxxwG9x4V3Z1Jpsj3g="/>
+            <table:column id="c_com_medroid_domain_DoctorDiagnosis_Diagnosis" property="diagnosis" z="rI8QUvtcpWptfJFf8qH9jIPTiNk="/>
+        </table:table>
+    </page:list>
+</div>

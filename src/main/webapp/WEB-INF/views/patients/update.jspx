@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_medroid_domain_Patient" modelAttribute="patient" path="/patients" versionField="Version" z="Ooes6IOSQjqHiCd70zq7BQMtpa8=">
+        <field:simple field="PatientMessages" id="c_com_medroid_domain_Patient_PatientMessages" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Messages" z="kW5ac4Xe/JJbW0g5elRU7aLAyJg="/>
+        <field:simple field="PatientNotifications" id="c_com_medroid_domain_Patient_PatientNotifications" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Notifications" z="0oX1Ya0hVyY/1jsSN7pLOdehJQQ="/>
+        <field:simple field="PatientMedications" id="c_com_medroid_domain_Patient_PatientMedications" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Medications" z="Q2F/hrLz7Jy1q43PT1cqPjXo4HM="/>
+        <field:simple field="PatientAllergies" id="c_com_medroid_domain_Patient_PatientAllergies" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Allergies" z="LAmdHEwBy7GdbnML+qotFkRLHsE="/>
+        <field:simple field="Diagnosis" id="c_com_medroid_domain_Patient_Diagnosis" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Diagnosis" z="afolX61PGO41LaJXRGqAB9r0Z2U="/>
+        <field:select field="Careteam" id="c_com_medroid_domain_Patient_Careteam" itemValue="id" items="${careteams}" path="/careteams" z="lm+pd8l2O//03C2BX2OwhdAJWq4="/>
+        <field:input field="patientID" id="c_com_medroid_domain_Patient_patientID" required="true" z="PuEiprNI6fpAYL90khsuwSLJF6k="/>
+        <field:input field="UserName" id="c_com_medroid_domain_Patient_UserName" required="true" z="Mv04RIxLuIFLgnRKFLy4/xqwCcM="/>
+        <field:input field="Password" id="c_com_medroid_domain_Patient_Password" min="8" required="true" z="c1oOnskJtH0jP4r9G27EQ52gMtk="/>
+        <field:input field="FirstName" id="c_com_medroid_domain_Patient_FirstName" min="3" required="true" z="1IQwwzEWpM1m9l3M9DIYAVU55dI="/>
+        <field:input field="LastName" id="c_com_medroid_domain_Patient_LastName" min="3" required="true" z="Q1kxhASNPIfgDQAi3/lQ0/Z29FM="/>
+        <field:input field="MiddleName" id="c_com_medroid_domain_Patient_MiddleName" min="3" required="true" z="y8juWenwapkRdQ+wLpXhYFpggPY="/>
+        <field:input field="Age" id="c_com_medroid_domain_Patient_Age" max="120" required="true" z="P6xPBQfGJ/9NH/kf9NJgheKgk0g="/>
+        <field:input field="Sex" id="c_com_medroid_domain_Patient_Sex" required="true" z="fvozVkgZpTw74Uvy7BzOkQrEKB0="/>
+        <field:input field="DOB" id="c_com_medroid_domain_Patient_DOB" required="true" z="58vAaHJm+u2+GRHfy9hoclQKxXM="/>
+        <field:input field="City" id="c_com_medroid_domain_Patient_City" required="true" z="32eHD78QB/jDZfJNknFGz2kZj2U="/>
+        <field:input field="Prov" id="c_com_medroid_domain_Patient_Prov" required="true" z="BSaeoWo/LliaHxHh6AXJCwdShiI="/>
+        <field:input field="Bloodtype" id="c_com_medroid_domain_Patient_Bloodtype" required="true" z="KKbDg6+N3c2b/pDPRHEpVyiZtxE="/>
+        <field:input field="Status" id="c_com_medroid_domain_Patient_Status" required="true" z="q4Dbb8cMlgH7wbHBLJZpQFyfrQ0="/>
+        <field:input field="HC" id="c_com_medroid_domain_Patient_HC" required="true" z="R8eKUdpL4wqO0XmqgTnK5Jsky38="/>
+        <field:input field="SymptomDesc" id="c_com_medroid_domain_Patient_SymptomDesc" required="true" z="lm1+vW6BnG1LqzNAe/zWGHN3EUU="/>
+    </form:update>
+</div>

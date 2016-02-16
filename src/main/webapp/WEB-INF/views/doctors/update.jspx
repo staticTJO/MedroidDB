@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_medroid_domain_Doctor" modelAttribute="doctor" path="/doctors" versionField="Version" z="MvqkCMna7iashQ8c26tS3zGm2w8=">
+        <field:simple field="DoctorMessages" id="c_com_medroid_domain_Doctor_DoctorMessages" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Messages" z="kopcNt2MToq/I79F7wHl1sB3wKU="/>
+        <field:simple field="DoctorNotifications" id="c_com_medroid_domain_Doctor_DoctorNotifications" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Notifications" z="YTviP1yGB/xBmGxhZa03cDPYEQ8="/>
+        <field:simple field="DoctorDiagnosis" id="c_com_medroid_domain_Doctor_DoctorDiagnosis" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Diagnosis" z="XcmOI9u/UoKT3FW+OhfycHQxI48="/>
+        <field:input field="doctorID" id="c_com_medroid_domain_Doctor_doctorID" required="true" z="xXJHp0tAaSrJfc0tU1PtBrpVj4I="/>
+        <field:input field="Password" id="c_com_medroid_domain_Doctor_Password" min="8" required="true" z="6YUtL56g3bYI9vmsensZFkDBM48="/>
+        <field:input field="UserName" id="c_com_medroid_domain_Doctor_UserName" required="true" z="2JCOq0lNYvm7oxwlkvIt6QEsnGY="/>
+        <field:input field="FirstName" id="c_com_medroid_domain_Doctor_FirstName" min="3" required="true" z="eQm2yUYTHadZLbpE3kbKZqeSNW8="/>
+        <field:input field="LastName" id="c_com_medroid_domain_Doctor_LastName" min="3" required="true" z="Zs8F7On8DnmyBNcp6VX2GWWD6h8="/>
+        <field:input field="Specialty" id="c_com_medroid_domain_Doctor_Specialty" required="true" z="5qfEJmrqqUgVhstV4/AKMxh8jkY="/>
+        <field:input field="status" id="c_com_medroid_domain_Doctor_status" required="true" z="GBDKtlHFjQ6mMBKI3TI74CPZvqk="/>
+        <field:select field="Careteams" id="c_com_medroid_domain_Doctor_Careteams" itemValue="id" items="${careteams}" multiple="true" path="/careteams" z="xBwfEutPqvzsfwqvVpVm/czEU0k="/>
+    </form:update>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="doctordiagnoses/list">
+        <put-attribute name="body" value="/WEB-INF/views/doctordiagnoses/list.jspx"/>
+    </definition>
+<definition extends="default" name="doctordiagnoses/show">
+        <put-attribute name="body" value="/WEB-INF/views/doctordiagnoses/show.jspx"/>
+    </definition>
+<definition extends="default" name="doctordiagnoses/create">
+        <put-attribute name="body" value="/WEB-INF/views/doctordiagnoses/create.jspx"/>
+    </definition>
+<definition extends="default" name="doctordiagnoses/update">
+        <put-attribute name="body" value="/WEB-INF/views/doctordiagnoses/update.jspx"/>
+    </definition>
+</tiles-definitions>

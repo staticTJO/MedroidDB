@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_medroid_domain_Doctor" object="${doctor}" path="/doctors" z="IRLVrkuI6SU/dsSk7TIrE2PQ35E=">
+        <field:display field="doctorID" id="s_com_medroid_domain_Doctor_doctorID" object="${doctor}" z="F36Do1D4N69RMdisDHCfWbhaFEI="/>
+        <field:display field="password" id="s_com_medroid_domain_Doctor_Password" object="${doctor}" z="xKiGxWF3nKkMsP2SzSqreb5sDk8="/>
+        <field:display field="userName" id="s_com_medroid_domain_Doctor_UserName" object="${doctor}" z="DprVpA/zjYf+QaqeyjwM3VrNFeI="/>
+        <field:display field="firstName" id="s_com_medroid_domain_Doctor_FirstName" object="${doctor}" z="O7yrDgF7UBoWhSy7dJxSVm44y/A="/>
+        <field:display field="lastName" id="s_com_medroid_domain_Doctor_LastName" object="${doctor}" z="ne7Uewgn7jU1VGVy0gKRCiNEa14="/>
+        <field:display field="specialty" id="s_com_medroid_domain_Doctor_Specialty" object="${doctor}" z="fpYq6z9SFejKEwYQOtlXmQ6lJqM="/>
+        <field:display field="status" id="s_com_medroid_domain_Doctor_status" object="${doctor}" z="oyfMKuADRF/dnsRic7+/3CyTUug="/>
+        <field:display field="careteams" id="s_com_medroid_domain_Doctor_Careteams" object="${doctor}" z="IpKSUnbS11OxDyf1wsKE0azvjH0="/>
+    </page:show>
+</div>

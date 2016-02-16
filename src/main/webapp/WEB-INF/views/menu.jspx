@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_doctormessages" z="10UZreeXnZTZzRq1s1uJ5qGBoVU=">
+            <menu:item id="i_doctormessages_new" messageCode="global_menu_new" url="/doctormessageses?form" z="E3jneNY5p9ACBxaXhKbA8VkfnTs="/>
+            <menu:item id="i_doctormessages_list" messageCode="global_menu_list" url="/doctormessageses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8YxMb/6FSeIIVAQsvzK0xly2hyk="/>
+        </menu:category>
+        <menu:category id="c_doctor" z="VN2p5Aytuw4KpwEZ1rOV1dx/Zqo=">
+            <menu:item id="i_doctor_new" messageCode="global_menu_new" url="/doctors?form" z="H2mXVD1wm4YfgSXqE6cZxN76eww="/>
+            <menu:item id="i_doctor_list" messageCode="global_menu_list" url="/doctors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nlQosh9IBqyF4rLMv+ifW1gxGeE="/>
+        </menu:category>
+        <menu:category id="c_doctordiagnosis" z="wzgR4zhVM7GVVWGlJwPVv5I16vI=">
+            <menu:item id="i_doctordiagnosis_new" messageCode="global_menu_new" url="/doctordiagnoses?form" z="StNowIKykAfDAOXrnQ/rpbrD5Vg="/>
+            <menu:item id="i_doctordiagnosis_list" messageCode="global_menu_list" url="/doctordiagnoses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ACKxNZFNx53FatiY697Qec+tT4o="/>
+        </menu:category>
+        <menu:category id="c_patientallergies" z="XbNPdWCqvUE+P2RJNWpDzYhJZCY=">
+            <menu:item id="i_patientallergies_new" messageCode="global_menu_new" url="/patientallergieses?form" z="+kvvZbIJXwCFQIGtWWnA0x3DuZU="/>
+            <menu:item id="i_patientallergies_list" messageCode="global_menu_list" url="/patientallergieses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WetUFgUrIjA5N55zLj01CuK9npo="/>
+        </menu:category>
+        <menu:category id="c_patientmedications" z="7mhB1sNEhgaUXfTQsk8q/FPgNEE=">
+            <menu:item id="i_patientmedications_new" messageCode="global_menu_new" url="/patientmedicationses?form" z="JsiOw8nTEpkyyLAXS+Gkj1lPSd0="/>
+            <menu:item id="i_patientmedications_list" messageCode="global_menu_list" url="/patientmedicationses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rFN7CE3sb45Nt5cAGvZrgPPEKls="/>
+        </menu:category>
+        <menu:category id="c_doctornotifications" z="e9HtieEGMWC7M3FwaOi36Wvw1Yk=">
+            <menu:item id="i_doctornotifications_new" messageCode="global_menu_new" url="/doctornotificationses?form" z="UY69nhur9zS7od3KMYuOU90R4yQ="/>
+            <menu:item id="i_doctornotifications_list" messageCode="global_menu_list" url="/doctornotificationses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YETekDhIwA44pOaoXfUah3BPXEk="/>
+        </menu:category>
+        <menu:category id="c_patientmessages" z="wZ9b5digAQ/vF3mltv6gsshFErQ=">
+            <menu:item id="i_patientmessages_new" messageCode="global_menu_new" url="/patientmessageses?form" z="DDxWfwa9JWczRE0X3t2SoNq6dP8="/>
+            <menu:item id="i_patientmessages_list" messageCode="global_menu_list" url="/patientmessageses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="zCp5f+P5LqxSryg44c9aXuMlyg4="/>
+        </menu:category>
+        <menu:category id="c_careteam" z="gjt4ggUakrSn6C6ECoSoAnH3vtU=">
+            <menu:item id="i_careteam_new" messageCode="global_menu_new" url="/careteams?form" z="ngnhpv7wMUElny3SEA/hu/TucsE="/>
+            <menu:item id="i_careteam_list" messageCode="global_menu_list" url="/careteams?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Agz5MawCedv2u4PZqie1eAv9hAI="/>
+        </menu:category>
+        <menu:category id="c_patientnotifications" z="fWnZ4/CoyV98huvZrGS1kAklETk=">
+            <menu:item id="i_patientnotifications_new" messageCode="global_menu_new" url="/patientnotificationses?form" z="21DPd29LuplCBfCat6jRWIdKYe8="/>
+            <menu:item id="i_patientnotifications_list" messageCode="global_menu_list" url="/patientnotificationses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KUFofwIHrZCVI0wn+lk2bALFxis="/>
+        </menu:category>
+        <menu:category id="c_patient" z="eF9KM9LmRl+DN4yo3LTRDZuTkik=">
+            <menu:item id="i_patient_new" messageCode="global_menu_new" url="/patients?form" z="/FWw96bQNbLZGfOq6+cGeWYQz8Y="/>
+            <menu:item id="i_patient_list" messageCode="global_menu_list" url="/patients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="mnvxypr4za1eNqrO8/rSPpLv4/U="/>
+        </menu:category>
+    </menu:menu>
+</div>

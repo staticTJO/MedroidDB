@@ -1,0 +1,121 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-15 15:20:38
+project --topLevelPackage com.Medroid --projectName Medroid --java 7 --packaging JAR
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-15 15:20:38
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-15 15:20:40
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class ~.domain.Medroid --testAutomatically 
+hint
+hint
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-15 15:37:47
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-15 16:28:15
+entity jpa --class ~.domain.PatientNotifications
+entity jpa --class ~.domain.PatientMessages
+entity jpa --class ~.domain.PatientAllergies
+entity jpa --class ~.domain.PatientMedications
+entity jpa --class ~.domain.CareTeam
+entity jpa --class ~.domain.DoctorDiagnosis
+entity jpa --class ~.domain.Doctor
+entity jpa --class ~.domain.DoctorMessages
+entity jpa --class ~.domain.DoctorNotifications
+// [failed] entity jpa --class ~.domain.Patient
+// [failed] entity jpa --class ~.domain.Patient
+hint
+hint 
+hint relationships
+class --class ~.domain.Patient
+field reference --fieldName PatientID --cardinality ONE_TO_ONE --type ~.domain.CareTeam
+// [failed] field reference --fieldName PatientID --cardinality ONE_TO_MANY --type ~.domain.PatientMessages
+class --class ~.domain.PatientMessages
+// [failed] field reference --fieldName PatientID --type ~.domain.Patient --cardinality MANY_TO_ONE 
+class --class ~.domain.Patient
+// [failed] field reference --fieldName PatientMessages --type ~.domain.PatientMessages
+// [failed] field reference --fieldName PatientMessages --type ~.domain.Patient
+// [failed] field reference --fieldName PatientMessages --type ~.domain.PatientMessages
+entity jpa --class ~.domain.Patient
+field reference --fieldName PatientID --type ~.domain.Patient
+field reference --fieldName PatientMessages --type ~.domain.Patient
+focus --class ~.domain.Patient
+// [failed] field set --fieldName PatientMessages --type ~.domain.PatientMessages --cardinality ONE_TO_MANY --mappedBy patientID
+// [failed] field set --fieldName PatientMessages --type ~.domain.PatientMessages --cardinality ONE_TO_MANY --mappedBy patientID
+// [failed] field set --fieldName PatientMessages --type ~.domain.PatientMessages --cardinality ONE_TO_MANY 
+// [failed] entity jpa --class ~.domain.Patient
+// [failed] field set --type ~.domain.PatientMessages --fieldName PatientMessages --cardinality ONE_TO_MANY --mappedBy patient
+focus --class ~.domain.Patient
+entity jpa --class ~.domain.PatientMessages
+focus --class ~.domain.Patient
+field set --fieldName PatientMessages --type ~.domain.PatientMessages --cardinality ONE_TO_MANY 
+// [failed] field set --fieldName PatientMessages --type ~.domain.PatientMessages --cardinality ONE_TO_MANY --mappedBy patient
+field set --fieldName PatientMessages --type ~.domain.PatientMessages --cardinality ONE_TO_MANY --mappedBy patient
+field reference --fieldName patientID --type ~.domain.Patient --notNull --cardinality MANY_TO_ONE 
+// [failed] entity jpa --class ~.domain.PatientNotifications
+field set --fieldName PatientNotifications --type ~.domain.PatientMessages --cardinality ONE_TO_MANY --mappedBy patientID
+// [failed] field set --fieldName PatientNotifications --type ~.domain.PatientNotifications --cardinality ONE_TO_MANY --mappedBy patientID
+field set --fieldName PatientNotifications --type ~.domain.PatientNotifications --cardinality ONE_TO_MANY --mappedBy patientID
+field set --fieldName PatientMedications --type ~.domain.PatientMedications --cardinality ONE_TO_MANY --mappedBy patientID
+field set --fieldName PatientAllergies --type ~.domain.PatientAllergies --cardinality ONE_TO_MANY --mappedBy patientID
+// [failed] field set --fieldName CareTeam --type ~.domain.CareTeam --cardinality ONE_TO_ONE --mappedBy patientID
+// [failed] field set --fieldName CareTeam --type ~.domain.CareTeam --cardinality ONE_TO_ONE
+// [failed] field set --fieldName CareTeam --type ~.domain.CareTeam --cardinality ONE_TO_ONE
+field reference --fieldName Careteam --type ~.domain.CareTeam --cardinality ONE_TO_ONE 
+focus --class ~.domain.Patient
+field number --fieldName patientID --type int --class ~.domain.Patient --notNull --unique --column 
+// [failed] field number --fieldName patientID --type int --class ~.domain.Patient --notNull --unique --column id
+field number --fieldName patientID --type int --class ~.domain.Patient --notNull --unique --column id
+focus --class ~.domain.Doctor
+field set --fieldName DoctorMessages --type ~.domain.DoctorMessages --cardinality ONE_TO_MANY --mappedBy patient
+focus --class ~.domain.DoctorMessages
+field reference --fieldName doctor --type ~.domain.Doctor --notNull --cardinality MANY_TO_ONE 
+focus --class ~.domain.Doctor
+field set --fieldName DoctorNotifications --type ~.domain.DoctorNotifications --cardinality ONE_TO_MANY --mappedBy doctor
+focus --class ~.domain.DoctorNotifications
+field reference --fieldName doctor --type ~.domain.Doctor --notNull --cardinality MANY_TO_ONE 
+focus --class ~.domain.Doctor
+field set --fieldName DoctorDiagnosis --type ~.domain.DoctorDiagnosis --cardinality ONE_TO_MANY --mappedBy doctor
+focus --class ~.domain.DoctorDiagnosis
+field reference --fieldName doctor --type ~.domain.Doctor --notNull --cardinality MANY_TO_ONE 
+focus --class ~.domain.Doctor
+field set --fieldName Careteams --type ~.domain.CareTeam --cardinality ONE_TO_MANY --mappedBy doctor
+focus --class ~.domain.CareTeam
+field reference --fieldName doctor --type ~.domain.Doctor --notNull --cardinality MANY_TO_ONE 
+focus --class ~.domain.Patient
+field string --fieldName Password --notNull --sizeMin
+// [failed] field string --fieldName Password --notNull --sizeMin 8
+field string --fieldName Password --notNull --sizeMin 8
+field string --fieldName FirstName --notNull --sizeMin 3
+field string --fieldName LastName --sizeMin 3
+field string --fieldName MiddleName --sizeMin 3
+field number --fieldName Age --type int --notNull --max 120
+field string --fieldName Sex --notNull 
+field string --fieldName DOB --notNull
+field string --fieldName City --notNull 
+// [failed] field string --fieldName SymptomDesc --notNull 
+// [failed] field date --fieldName Date --type java.util.Date --dateFormat MEDIUM 
+// [failed] field date --fieldName Date --type java.util.Date 
+focus --class ~.domain.DoctorMessages
+// [failed] field date --fieldName Date --type java.util.Date 
+// [failed] field date --fieldName Date --type java.util.Date 
+field date --fieldName DateRecorded --type java.util.Date 
+focus --class ~.domain.PatientMessages
+field boolean --fieldName isRead 
+field string --fieldName messagetxt
+focus --class ~.domain.DoctorNotifications
+focus --class ~.domain.PatientMessages
+focus --class ~.domain.PatientMessages
+field number --fieldName DoctorID --type int --notNull 
+field number --fieldName DoctorID --type int --notNull 
+focus --class ~.domain.PatientMedications
+field string --fieldName Allergy
+focus --class ~.domain.PatientMedications
+field string --fieldName Medication 
+focus --class ~.domain.Patient
+field set --fieldName Diagnosis --type ~.domain.DoctorDiagnosis --cardinality ONE_TO_MANY --mappedBy doctor
+focus --class ~.domain.DoctorDiagnosis
+field string --fieldName Diagnosis
+focus --class ~.domain.Doctor
+field set --fieldName Careteams --type ~.domain.CareTeam --cardinality MANY_TO_MANY 
+focus --class ~.domain.CareTeam
+field set --fieldName Doctors --type ~.domain.Doctor --cardinality MANY_TO_MANY --mappedBy doctor
+web mvc setup
+web mvc all --package com.medroid.domain
+web mvc all --package com.medroid.domain
+web mvc all --package com.medroid.domain.web

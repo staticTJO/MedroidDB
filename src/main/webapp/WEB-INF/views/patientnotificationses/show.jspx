@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_medroid_domain_PatientNotifications" object="${patientnotifications}" path="/patientnotificationses" z="8RDOBpQ22cZ6i7T2n3OkjCqq/iA=">
+        <field:display field="patient" id="s_com_medroid_domain_PatientNotifications_patient" object="${patientnotifications}" z="uq9qYBYE529h0lZEwxSS2acdKRw="/>
+        <field:display date="true" dateTimePattern="${patientNotifications_daterecorded_date_format}" field="dateRecorded" id="s_com_medroid_domain_PatientNotifications_DateRecorded" object="${patientnotifications}" z="uHUubBJBbNdLfMQXKlvcmS4UQJU="/>
+        <field:display field="isRead" id="s_com_medroid_domain_PatientNotifications_isRead" object="${patientnotifications}" z="xp94nwx3/r0qllZgICWJl8V6R0A="/>
+        <field:display field="messagetxt" id="s_com_medroid_domain_PatientNotifications_messagetxt" object="${patientnotifications}" z="8T/1XowISdAwVI1q+mKVJdH59ww="/>
+        <field:display field="doctorID" id="s_com_medroid_domain_PatientNotifications_DoctorID" object="${patientnotifications}" z="4ECy2cmcUXFvxEGrlof6pfMLADQ="/>
+    </page:show>
+</div>

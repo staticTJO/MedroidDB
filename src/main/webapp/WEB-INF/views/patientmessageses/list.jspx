@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_medroid_domain_PatientMessages" items="${patientmessageses}" z="UXCHQgmLPqnh8lHwOL9vS+s9fkA=">
+        <table:table data="${patientmessageses}" id="l_com_medroid_domain_PatientMessages" path="/patientmessageses" z="ev4v7pda4cyJki3PLfzwvEgyMcM=">
+            <table:column id="c_com_medroid_domain_PatientMessages_patient" property="patient" z="aFdjUbN1H1wXTTyEpy0cSrdZhpI="/>
+            <table:column date="true" dateTimePattern="${patientMessages_daterecorded_date_format}" id="c_com_medroid_domain_PatientMessages_DateRecorded" property="dateRecorded" z="iGq7e6j+VoiWTUs5E79p06EbfN0="/>
+            <table:column id="c_com_medroid_domain_PatientMessages_isRead" property="isRead" z="B8IIZziiXtIm5Eu/ANB0Zew9nK4="/>
+            <table:column id="c_com_medroid_domain_PatientMessages_messagetxt" property="messagetxt" z="9crm3X8FrDBYCYgeGyW7tqyCuBA="/>
+            <table:column id="c_com_medroid_domain_PatientMessages_DoctorID" property="doctorID" z="knPbDS9IX0x5ocxfkr1hbW0XM1E="/>
+        </table:table>
+    </page:list>
+</div>
