@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_medroid_domain_Patient" object="${patient}" path="/patients" z="+QdFl9nhtuakfdb5Hyj5sQ8JNmo=">
-        <field:display field="careteam" id="s_com_medroid_domain_Patient_Careteam" object="${patient}" z="7v2Wthr5hpVQbbnhYGVfWOycj60="/>
         <field:display field="patientID" id="s_com_medroid_domain_Patient_patientID" object="${patient}" z="HCQ4RYZsZ61f0XM9ZPuv5DbM5As="/>
         <field:display field="userName" id="s_com_medroid_domain_Patient_UserName" object="${patient}" z="l9LxtzmmUFjgsGYm+cY1mYiJc+M="/>
         <field:display field="password" id="s_com_medroid_domain_Patient_Password" object="${patient}" z="VOIH1vkfw89s4YdGFA0JN+2ygDQ="/>

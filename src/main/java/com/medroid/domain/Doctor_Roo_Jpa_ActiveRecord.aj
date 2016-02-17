@@ -14,7 +14,7 @@ privileged aspect Doctor_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Doctor.entityManager;
     
-    public static final List<String> Doctor.fieldNames4OrderClauseFilter = java.util.Arrays.asList("DoctorMessages", "DoctorNotifications", "DoctorDiagnosis", "doctorID", "Password", "UserName", "FirstName", "LastName", "Specialty", "status", "careteam");
+    public static final List<String> Doctor.fieldNames4OrderClauseFilter = java.util.Arrays.asList("DoctorMessages", "DoctorNotifications", "DoctorDiagnosis", "doctorID", "Password", "UserName", "FirstName", "LastName", "Specialty", "status", "attendingpatients");
     
     public static final EntityManager Doctor.entityManager() {
         EntityManager em = new Doctor().entityManager;

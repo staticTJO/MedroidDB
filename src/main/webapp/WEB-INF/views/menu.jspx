@@ -31,10 +31,6 @@
             <menu:item id="i_patientmessages_new" messageCode="global_menu_new" url="/patientmessageses?form" z="DDxWfwa9JWczRE0X3t2SoNq6dP8="/>
             <menu:item id="i_patientmessages_list" messageCode="global_menu_list" url="/patientmessageses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="zCp5f+P5LqxSryg44c9aXuMlyg4="/>
         </menu:category>
-        <menu:category id="c_careteam" z="gjt4ggUakrSn6C6ECoSoAnH3vtU=">
-            <menu:item id="i_careteam_new" messageCode="global_menu_new" url="/careteams?form" z="ngnhpv7wMUElny3SEA/hu/TucsE="/>
-            <menu:item id="i_careteam_list" messageCode="global_menu_list" url="/careteams?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Agz5MawCedv2u4PZqie1eAv9hAI="/>
-        </menu:category>
         <menu:category id="c_patientnotifications" z="fWnZ4/CoyV98huvZrGS1kAklETk=">
             <menu:item id="i_patientnotifications_new" messageCode="global_menu_new" url="/patientnotificationses?form" z="21DPd29LuplCBfCat6jRWIdKYe8="/>
             <menu:item id="i_patientnotifications_list" messageCode="global_menu_list" url="/patientnotificationses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KUFofwIHrZCVI0wn+lk2bALFxis="/>
@@ -42,6 +38,10 @@
         <menu:category id="c_patient" z="eF9KM9LmRl+DN4yo3LTRDZuTkik=">
             <menu:item id="i_patient_new" messageCode="global_menu_new" url="/patients?form" z="/FWw96bQNbLZGfOq6+cGeWYQz8Y="/>
             <menu:item id="i_patient_list" messageCode="global_menu_list" url="/patients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="mnvxypr4za1eNqrO8/rSPpLv4/U="/>
+        </menu:category>
+        <menu:category id="c_attendingdocs" z="9Vsks4Mk+iZRV9zxNxJfp+wQOQc=">
+            <menu:item id="i_attendingdocs_new" messageCode="global_menu_new" url="/attendingdocses?form" z="KoYG4izLkzTV+1xf0CxZ5DYv0Aw="/>
+            <menu:item id="i_attendingdocs_list" messageCode="global_menu_list" url="/attendingdocses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="EnOWFF7x0I3OFvPVQEbNkfWhH24="/>
         </menu:category>
     </menu:menu>
 </div>

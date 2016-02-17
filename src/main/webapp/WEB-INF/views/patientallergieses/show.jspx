@@ -4,5 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_medroid_domain_PatientAllergies" object="${patientallergies}" path="/patientallergieses" z="/9nRZ6HIpyuVa0ABT05yifCrxDA=">
         <field:display field="patient" id="s_com_medroid_domain_PatientAllergies_patient" object="${patientallergies}" z="CdXIfI20Tzc5jlwQIWSCuDEvxeE="/>
+        <field:display field="allergy" id="s_com_medroid_domain_PatientAllergies_Allergy" object="${patientallergies}" z="MdsqjUkxXo+FmpVwI7W0TONtAOQ="/>
     </page:show>
 </div>

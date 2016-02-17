@@ -8,7 +8,6 @@
         <field:simple field="PatientMedications" id="c_com_medroid_domain_Patient_PatientMedications" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Medications" z="Q2F/hrLz7Jy1q43PT1cqPjXo4HM="/>
         <field:simple field="PatientAllergies" id="c_com_medroid_domain_Patient_PatientAllergies" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Allergies" z="LAmdHEwBy7GdbnML+qotFkRLHsE="/>
         <field:simple field="Diagnosis" id="c_com_medroid_domain_Patient_Diagnosis" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Diagnosis" z="afolX61PGO41LaJXRGqAB9r0Z2U="/>
-        <field:select field="Careteam" id="c_com_medroid_domain_Patient_Careteam" itemValue="id" items="${careteams}" path="/careteams" z="lm+pd8l2O//03C2BX2OwhdAJWq4="/>
         <field:input field="patientID" id="c_com_medroid_domain_Patient_patientID" required="true" z="PuEiprNI6fpAYL90khsuwSLJF6k="/>
         <field:input field="UserName" id="c_com_medroid_domain_Patient_UserName" required="true" z="Mv04RIxLuIFLgnRKFLy4/xqwCcM="/>
         <field:input field="Password" id="c_com_medroid_domain_Patient_Password" min="8" required="true" z="c1oOnskJtH0jP4r9G27EQ52gMtk="/>
@@ -24,5 +23,6 @@
         <field:input field="Status" id="c_com_medroid_domain_Patient_Status" required="true" z="q4Dbb8cMlgH7wbHBLJZpQFyfrQ0="/>
         <field:input field="HC" id="c_com_medroid_domain_Patient_HC" required="true" z="R8eKUdpL4wqO0XmqgTnK5Jsky38="/>
         <field:input field="SymptomDesc" id="c_com_medroid_domain_Patient_SymptomDesc" required="true" z="lm1+vW6BnG1LqzNAe/zWGHN3EUU="/>
+        <field:simple field="AttendingDoctors" id="c_com_medroid_domain_Patient_AttendingDoctors" messageCode="entity_reference_not_managed" messageCodeAttribute="Attendingdocs" z="mnuDiPDAi4XXq2cvZG8gxKC9DXI="/>
     </form:update>
 </div>

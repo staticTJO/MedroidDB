@@ -6,11 +6,11 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.validation.constraints.Max;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
@@ -36,7 +36,7 @@ public class Patient {
      */
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
     private Set<PatientAllergies> PatientAllergies = new HashSet<PatientAllergies>();
-    
+
     /**
      */
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
@@ -44,13 +44,8 @@ public class Patient {
 
     /**
      */
-    @OneToOne
-    private CareTeam Careteam;
-
-    /**
-     */
     @NotNull
-    @Column(name = "id", unique = true, insertable = false, updatable = false )
+    @Column(name = "id", unique = true, insertable = false, updatable = false)
     private int patientID;
 
     /**
@@ -126,4 +121,9 @@ public class Patient {
      */
     @NotNull
     private String SymptomDesc;
+
+    /**
+     */
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
+    private Set<Attendingdocs> AttendingDoctors = new HashSet<Attendingdocs>();
 }

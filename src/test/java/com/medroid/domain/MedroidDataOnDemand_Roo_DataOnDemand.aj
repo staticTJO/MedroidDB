@@ -3,7 +3,6 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
 import com.medroid.domain.MedroidDataOnDemand;
 import com.medroid.domain.Patient;
 import java.security.SecureRandom;
@@ -27,7 +26,6 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
         Patient obj = new Patient();
         setAge(obj, index);
         setBloodtype(obj, index);
-        setCareteam(obj, index);
         setCity(obj, index);
         setDOB(obj, index);
         setFirstName(obj, index);
@@ -55,11 +53,6 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
     public void MedroidDataOnDemand.setBloodtype(Patient obj, int index) {
         String Bloodtype = "Bloodtype_" + index;
         obj.setBloodtype(Bloodtype);
-    }
-    
-    public void MedroidDataOnDemand.setCareteam(Patient obj, int index) {
-        CareTeam Careteam = null;
-        obj.setCareteam(Careteam);
     }
     
     public void MedroidDataOnDemand.setCity(Patient obj, int index) {

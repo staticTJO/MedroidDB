@@ -125,3 +125,68 @@ focus --class ~.domain.CareTeam
 field set --fieldName Doctors --type ~.domain.Doctor --cardinality ONE_TO_MANY --mappedBy CareTeam
 focus --class ~.domain.Doctor
 field reference --fieldName careteam --type ~.domain.CareTeam --cardinality MANY_TO_ONE
+entity jpa --class ~.domain.CareTeamDoctors
+focus --class ~.domain.CareTeam
+field set --fieldName CareTeamDoctors --type ~.domain.CareTeamDoctors --cardinality ONE_TO_MANY --mappedBy careteam
+field set --fieldName CareTeamDoctors --type ~.domain.CareTeamDoctors --cardinality ONE_TO_MANY --mappedBy careteam
+focus --class ~.domain.CareTeamDoctors
+field reference --fieldName careteam --type ~.domain.CareTeam --cardinality MANY_TO_ONE 
+focus --class ~.domain.CareTeam 
+field set --fieldName doctors --type ~.domain.Doctor --cardinality ONE_TO_MANY --mappedBy careteam
+field reference --fieldName careteam --type ~.domain.CareTeam --cardinality MANY_TO_ONE 
+// [failed] field reference --fieldName careteam --type ~.domain.CareTeam --cardinality MANY_TO_ONE 
+focus --class ~.domain.CareTeam 
+field set --fieldName doctors --type ~.domain.Doctor --cardinality MANY_TO_MANY 
+focus --class ~.domain.Doctor 
+field set --fieldName careteams --type ~.domain.CareTeam --cardinality MANY_TO_MANY --mappedBy doctors
+focus --class ~.domain.CareTeam
+field list --type ~.domain.Doctor --fieldName careteamdocs --cardinality ONE_TO_MANY 
+field list --type ~.domain.Doctor --fieldName careteamdocs --cardinality ONE_TO_MANY 
+focus --class ~.domain.CareTeam
+field list --type ~.domain.Doctor --fieldName careteamdocs --cardinality MANY_TO_MANY 
+field list --type ~.domain.Doctor --fieldName careteamdocs --cardinality MANY_TO_MANY 
+focus --class ~.domain.Doctor
+field list --type ~.domain.CareTeam --fieldName careteams --mappedBy careteamdocs
+// [failed] focus --class ~.domain.CareTeam
+focus --class ~.domain.Doctor
+hint
+help
+// [failed] perform clean 
+// [failed] perform assembly 
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-16 19:22:11
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-16 19:24:50
+entity jpa --class ~.domain.AttendingDoctors 
+focus --class ~.domain.Patient
+field set --fieldName AttendingDoctors --type ~.domain.AttendingDoctors --cardinality ONE_TO_MANY --mappedBy patient
+// [failed] field set --fieldName AttendingDoctors --type ~.domain.AttendingDoctors --cardinality ONE_TO_MANY --mappedBy patient
+field reference --fieldName patient --type ~.domain.Patient --cardinality MANY_TO_ONE 
+focus --class ~.domain.AttendingDoctors
+field set --fieldName doctors --type ~.domain.Doctor --cardinality ONE_TO_MANY 
+focus --class ~.domain.Doctor
+field reference --fieldName attending --type ~.domain.AttendingDoctors --cardinality MANY_TO_ONE 
+web mvc controller --class ~.domain.AttendingDoctors 
+web mvc controller --class ~.domain.AttendingDoctors 
+web mvc all --package com.medroid.domain
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-16 19:48:57
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-16 19:49:47
+entity jpa --class Attendingdocs 
+entity jpa --class ~.domain.Attendingdocs
+controller all --package com.medroid.domain
+focus --class ~.domain.Attendingdocs
+focus --class ~.domain.Patient
+field set --fieldName AttendingDoctors --type ~.domain.Attendingdocs --cardinality ONE_TO_MANY --mappedBy patient
+focus --class ~.domain.Attendingdocs
+field reference --fieldName patient --type ~.domain.Patient --cardinality MANY_TO_ONE 
+focus --class ~.domain.Attendingdocs
+field set --fieldName doctors --type ~.domain.Doctor --cardinality ONE_TO_MANY --mappedBy attending
+focus --class ~.domain.Doctor 
+// [failed] field reference --fieldName attending --type ~.Attendingdocs --cardinality MANY_TO_ONE 
+field reference --fieldName attending --type ~.domain.Attendingdocs --cardinality MANY_TO_ONE 
+focus --class ~.domain.Doctor
+// [failed] field set --fieldName AttendingPatients --type ~.Attendingdocs --cardinality ONE_TO_MANY --mappedBy doctor 
+// [failed] field set --fieldName AttendingPatients --type ~.Attendingdocs --cardinality ONE_TO_MANY --mappedBy doctor 
+field set --fieldName attendingpatients --type ~.domain.Attendingdocs --cardinality ONE_TO_MANY --mappedBy doctor
+focus --class ~.domain.Attendingdocs
+field reference --fieldName doctor --type ~.domain.Doctor --cardinality MANY_TO_ONE 
+focus --class ~.domain.PatientAllergies
+field string --fieldName Allergy 

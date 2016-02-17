@@ -3,7 +3,7 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.Patient;
 import com.medroid.domain.PatientAllergies;
@@ -92,7 +92,7 @@ privileged aspect PatientController_Roo_Controller {
     
     void PatientController.populateEditForm(Model uiModel, Patient patient) {
         uiModel.addAttribute("patient", patient);
-        uiModel.addAttribute("careteams", CareTeam.findAllCareTeams());
+        uiModel.addAttribute("attendingdocses", Attendingdocs.findAllAttendingdocses());
         uiModel.addAttribute("doctordiagnoses", DoctorDiagnosis.findAllDoctorDiagnoses());
         uiModel.addAttribute("patientallergieses", PatientAllergies.findAllPatientAllergieses());
         uiModel.addAttribute("patientmedicationses", PatientMedications.findAllPatientMedicationses());

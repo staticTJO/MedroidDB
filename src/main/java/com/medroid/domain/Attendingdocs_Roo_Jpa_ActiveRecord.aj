@@ -3,97 +3,97 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import org.springframework.transaction.annotation.Transactional;
 
-privileged aspect CareTeam_Roo_Jpa_ActiveRecord {
+privileged aspect Attendingdocs_Roo_Jpa_ActiveRecord {
     
     @PersistenceContext
-    transient EntityManager CareTeam.entityManager;
+    transient EntityManager Attendingdocs.entityManager;
     
-    public static final List<String> CareTeam.fieldNames4OrderClauseFilter = java.util.Arrays.asList("patient", "Doctors");
+    public static final List<String> Attendingdocs.fieldNames4OrderClauseFilter = java.util.Arrays.asList("patient", "doctor");
     
-    public static final EntityManager CareTeam.entityManager() {
-        EntityManager em = new CareTeam().entityManager;
+    public static final EntityManager Attendingdocs.entityManager() {
+        EntityManager em = new Attendingdocs().entityManager;
         if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
         return em;
     }
     
-    public static long CareTeam.countCareTeams() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM CareTeam o", Long.class).getSingleResult();
+    public static long Attendingdocs.countAttendingdocses() {
+        return entityManager().createQuery("SELECT COUNT(o) FROM Attendingdocs o", Long.class).getSingleResult();
     }
     
-    public static List<CareTeam> CareTeam.findAllCareTeams() {
-        return entityManager().createQuery("SELECT o FROM CareTeam o", CareTeam.class).getResultList();
+    public static List<Attendingdocs> Attendingdocs.findAllAttendingdocses() {
+        return entityManager().createQuery("SELECT o FROM Attendingdocs o", Attendingdocs.class).getResultList();
     }
     
-    public static List<CareTeam> CareTeam.findAllCareTeams(String sortFieldName, String sortOrder) {
-        String jpaQuery = "SELECT o FROM CareTeam o";
+    public static List<Attendingdocs> Attendingdocs.findAllAttendingdocses(String sortFieldName, String sortOrder) {
+        String jpaQuery = "SELECT o FROM Attendingdocs o";
         if (fieldNames4OrderClauseFilter.contains(sortFieldName)) {
             jpaQuery = jpaQuery + " ORDER BY " + sortFieldName;
             if ("ASC".equalsIgnoreCase(sortOrder) || "DESC".equalsIgnoreCase(sortOrder)) {
                 jpaQuery = jpaQuery + " " + sortOrder;
             }
         }
-        return entityManager().createQuery(jpaQuery, CareTeam.class).getResultList();
+        return entityManager().createQuery(jpaQuery, Attendingdocs.class).getResultList();
     }
     
-    public static CareTeam CareTeam.findCareTeam(Long id) {
+    public static Attendingdocs Attendingdocs.findAttendingdocs(Long id) {
         if (id == null) return null;
-        return entityManager().find(CareTeam.class, id);
+        return entityManager().find(Attendingdocs.class, id);
     }
     
-    public static List<CareTeam> CareTeam.findCareTeamEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM CareTeam o", CareTeam.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+    public static List<Attendingdocs> Attendingdocs.findAttendingdocsEntries(int firstResult, int maxResults) {
+        return entityManager().createQuery("SELECT o FROM Attendingdocs o", Attendingdocs.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
-    public static List<CareTeam> CareTeam.findCareTeamEntries(int firstResult, int maxResults, String sortFieldName, String sortOrder) {
-        String jpaQuery = "SELECT o FROM CareTeam o";
+    public static List<Attendingdocs> Attendingdocs.findAttendingdocsEntries(int firstResult, int maxResults, String sortFieldName, String sortOrder) {
+        String jpaQuery = "SELECT o FROM Attendingdocs o";
         if (fieldNames4OrderClauseFilter.contains(sortFieldName)) {
             jpaQuery = jpaQuery + " ORDER BY " + sortFieldName;
             if ("ASC".equalsIgnoreCase(sortOrder) || "DESC".equalsIgnoreCase(sortOrder)) {
                 jpaQuery = jpaQuery + " " + sortOrder;
             }
         }
-        return entityManager().createQuery(jpaQuery, CareTeam.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+        return entityManager().createQuery(jpaQuery, Attendingdocs.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
     @Transactional
-    public void CareTeam.persist() {
+    public void Attendingdocs.persist() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.persist(this);
     }
     
     @Transactional
-    public void CareTeam.remove() {
+    public void Attendingdocs.remove() {
         if (this.entityManager == null) this.entityManager = entityManager();
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            CareTeam attached = CareTeam.findCareTeam(this.id);
+            Attendingdocs attached = Attendingdocs.findAttendingdocs(this.id);
             this.entityManager.remove(attached);
         }
     }
     
     @Transactional
-    public void CareTeam.flush() {
+    public void Attendingdocs.flush() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.flush();
     }
     
     @Transactional
-    public void CareTeam.clear() {
+    public void Attendingdocs.clear() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.clear();
     }
     
     @Transactional
-    public CareTeam CareTeam.merge() {
+    public Attendingdocs Attendingdocs.merge() {
         if (this.entityManager == null) this.entityManager = entityManager();
-        CareTeam merged = this.entityManager.merge(this);
+        Attendingdocs merged = this.entityManager.merge(this);
         this.entityManager.flush();
         return merged;
     }

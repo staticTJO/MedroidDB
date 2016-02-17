@@ -14,7 +14,7 @@ privileged aspect PatientAllergies_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager PatientAllergies.entityManager;
     
-    public static final List<String> PatientAllergies.fieldNames4OrderClauseFilter = java.util.Arrays.asList("patient");
+    public static final List<String> PatientAllergies.fieldNames4OrderClauseFilter = java.util.Arrays.asList("patient", "Allergy");
     
     public static final EntityManager PatientAllergies.entityManager() {
         EntityManager em = new PatientAllergies().entityManager;

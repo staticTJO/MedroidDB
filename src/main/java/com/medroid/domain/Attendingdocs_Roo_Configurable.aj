@@ -3,11 +3,11 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import org.springframework.beans.factory.annotation.Configurable;
 
-privileged aspect CareTeam_Roo_Configurable {
+privileged aspect Attendingdocs_Roo_Configurable {
     
-    declare @type: CareTeam: @Configurable;
+    declare @type: Attendingdocs: @Configurable;
     
 }

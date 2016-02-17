@@ -4,7 +4,7 @@
 package com.medroid.domain;
 
 import com.medroid.domain.ApplicationConversionServiceFactoryBean;
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import com.medroid.domain.Doctor;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.DoctorMessages;
@@ -22,26 +22,26 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
     
-    public Converter<CareTeam, String> ApplicationConversionServiceFactoryBean.getCareTeamToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<com.medroid.domain.CareTeam, java.lang.String>() {
-            public String convert(CareTeam careTeam) {
+    public Converter<Attendingdocs, String> ApplicationConversionServiceFactoryBean.getAttendingdocsToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.medroid.domain.Attendingdocs, java.lang.String>() {
+            public String convert(Attendingdocs attendingdocs) {
                 return "(no displayable fields)";
             }
         };
     }
     
-    public Converter<Long, CareTeam> ApplicationConversionServiceFactoryBean.getIdToCareTeamConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.medroid.domain.CareTeam>() {
-            public com.medroid.domain.CareTeam convert(java.lang.Long id) {
-                return CareTeam.findCareTeam(id);
+    public Converter<Long, Attendingdocs> ApplicationConversionServiceFactoryBean.getIdToAttendingdocsConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.medroid.domain.Attendingdocs>() {
+            public com.medroid.domain.Attendingdocs convert(java.lang.Long id) {
+                return Attendingdocs.findAttendingdocs(id);
             }
         };
     }
     
-    public Converter<String, CareTeam> ApplicationConversionServiceFactoryBean.getStringToCareTeamConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.medroid.domain.CareTeam>() {
-            public com.medroid.domain.CareTeam convert(String id) {
-                return getObject().convert(getObject().convert(id, Long.class), CareTeam.class);
+    public Converter<String, Attendingdocs> ApplicationConversionServiceFactoryBean.getStringToAttendingdocsConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.medroid.domain.Attendingdocs>() {
+            public com.medroid.domain.Attendingdocs convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Attendingdocs.class);
             }
         };
     }
@@ -169,7 +169,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<PatientAllergies, String> ApplicationConversionServiceFactoryBean.getPatientAllergiesToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.medroid.domain.PatientAllergies, java.lang.String>() {
             public String convert(PatientAllergies patientAllergies) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(patientAllergies.getAllergy()).toString();
             }
         };
     }
@@ -263,9 +263,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
-        registry.addConverter(getCareTeamToStringConverter());
-        registry.addConverter(getIdToCareTeamConverter());
-        registry.addConverter(getStringToCareTeamConverter());
+        registry.addConverter(getAttendingdocsToStringConverter());
+        registry.addConverter(getIdToAttendingdocsConverter());
+        registry.addConverter(getStringToAttendingdocsConverter());
         registry.addConverter(getDoctorToStringConverter());
         registry.addConverter(getIdToDoctorConverter());
         registry.addConverter(getStringToDoctorConverter());

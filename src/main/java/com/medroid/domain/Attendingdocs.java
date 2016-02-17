@@ -1,25 +1,21 @@
 package com.medroid.domain;
-import javax.persistence.OneToOne;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
-import java.util.HashSet;
-import java.util.Set;
-import javax.persistence.CascadeType;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
-public class CareTeam {
+public class Attendingdocs {
 
     /**
      */
-    @OneToOne
+    @ManyToOne
     private Patient patient;
 
     /**
      */
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "careteam")
-    private Set<Doctor> Doctors = new HashSet<Doctor>();
+    @ManyToOne
+    private Doctor doctor;
 }

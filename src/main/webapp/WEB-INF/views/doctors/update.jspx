@@ -13,6 +13,6 @@
         <field:input field="LastName" id="c_com_medroid_domain_Doctor_LastName" min="3" required="true" z="Zs8F7On8DnmyBNcp6VX2GWWD6h8="/>
         <field:input field="Specialty" id="c_com_medroid_domain_Doctor_Specialty" required="true" z="5qfEJmrqqUgVhstV4/AKMxh8jkY="/>
         <field:input field="status" id="c_com_medroid_domain_Doctor_status" required="true" z="GBDKtlHFjQ6mMBKI3TI74CPZvqk="/>
-        <field:select field="careteam" id="c_com_medroid_domain_Doctor_careteam" itemValue="id" items="${careteams}" path="/careteams" z="XjtAIFLnDaM9gsP0gmJH97m5wng="/>
+        <field:simple field="attendingpatients" id="c_com_medroid_domain_Doctor_attendingpatients" messageCode="entity_reference_not_managed" messageCodeAttribute="Attendingdocs" z="SgQ0PQW89EfFQVHx0tLnpnpHuPE="/>
     </form:update>
 </div>

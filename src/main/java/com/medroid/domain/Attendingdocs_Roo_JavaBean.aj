@@ -3,27 +3,26 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import com.medroid.domain.Doctor;
 import com.medroid.domain.Patient;
-import java.util.Set;
 
-privileged aspect CareTeam_Roo_JavaBean {
+privileged aspect Attendingdocs_Roo_JavaBean {
     
-    public Patient CareTeam.getPatient() {
+    public Patient Attendingdocs.getPatient() {
         return this.patient;
     }
     
-    public void CareTeam.setPatient(Patient patient) {
+    public void Attendingdocs.setPatient(Patient patient) {
         this.patient = patient;
     }
     
-    public Set<Doctor> CareTeam.getDoctors() {
-        return this.Doctors;
+    public Doctor Attendingdocs.getDoctor() {
+        return this.doctor;
     }
     
-    public void CareTeam.setDoctors(Set<Doctor> Doctors) {
-        this.Doctors = Doctors;
+    public void Attendingdocs.setDoctor(Doctor doctor) {
+        this.doctor = doctor;
     }
     
 }

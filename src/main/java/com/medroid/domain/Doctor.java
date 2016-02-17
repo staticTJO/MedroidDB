@@ -70,6 +70,6 @@ public class Doctor {
 
     /**
      */
-    @ManyToOne
-    private CareTeam careteam;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
+    private Set<Attendingdocs> attendingpatients = new HashSet<Attendingdocs>();
 }

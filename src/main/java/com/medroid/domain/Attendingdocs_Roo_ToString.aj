@@ -3,13 +3,13 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-privileged aspect CareTeam_Roo_ToString {
+privileged aspect Attendingdocs_Roo_ToString {
     
-    public String CareTeam.toString() {
+    public String Attendingdocs.toString() {
         return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
     

@@ -3,7 +3,7 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.CareTeam;
+import com.medroid.domain.Attendingdocs;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,32 +11,32 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-privileged aspect CareTeam_Roo_Jpa_Entity {
+privileged aspect Attendingdocs_Roo_Jpa_Entity {
     
-    declare @type: CareTeam: @Entity;
+    declare @type: Attendingdocs: @Entity;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Long CareTeam.id;
+    private Long Attendingdocs.id;
     
     @Version
     @Column(name = "version")
-    private Integer CareTeam.version;
+    private Integer Attendingdocs.version;
     
-    public Long CareTeam.getId() {
+    public Long Attendingdocs.getId() {
         return this.id;
     }
     
-    public void CareTeam.setId(Long id) {
+    public void Attendingdocs.setId(Long id) {
         this.id = id;
     }
     
-    public Integer CareTeam.getVersion() {
+    public Integer Attendingdocs.getVersion() {
         return this.version;
     }
     
-    public void CareTeam.setVersion(Integer version) {
+    public void Attendingdocs.setVersion(Integer version) {
         this.version = version;
     }
     

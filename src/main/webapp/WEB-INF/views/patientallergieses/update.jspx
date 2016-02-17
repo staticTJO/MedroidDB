@@ -4,5 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_medroid_domain_PatientAllergies" modelAttribute="patientAllergies" path="/patientallergieses" versionField="Version" z="zr5yGj83UlQscIKHZv0uesd5Vp4=">
         <field:select field="patient" id="c_com_medroid_domain_PatientAllergies_patient" itemValue="id" items="${patients}" path="/patients" required="true" z="iRScj/yBQhYU/o/9JoDwf/307Sk="/>
+        <field:input field="Allergy" id="c_com_medroid_domain_PatientAllergies_Allergy" z="sb7GhbZ5NMxy3mMR/Sn0+3XA1OI="/>
     </form:update>
 </div>

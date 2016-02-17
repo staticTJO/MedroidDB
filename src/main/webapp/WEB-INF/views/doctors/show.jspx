@@ -10,6 +10,5 @@
         <field:display field="lastName" id="s_com_medroid_domain_Doctor_LastName" object="${doctor}" z="ne7Uewgn7jU1VGVy0gKRCiNEa14="/>
         <field:display field="specialty" id="s_com_medroid_domain_Doctor_Specialty" object="${doctor}" z="fpYq6z9SFejKEwYQOtlXmQ6lJqM="/>
         <field:display field="status" id="s_com_medroid_domain_Doctor_status" object="${doctor}" z="oyfMKuADRF/dnsRic7+/3CyTUug="/>
-        <field:display field="careteam" id="s_com_medroid_domain_Doctor_careteam" object="${doctor}" z="Pzp2lGyuSyIugdzARi8CQaoM2OY="/>
     </page:show>
 </div>
