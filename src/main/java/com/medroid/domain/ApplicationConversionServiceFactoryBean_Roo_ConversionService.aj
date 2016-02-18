@@ -4,7 +4,7 @@
 package com.medroid.domain;
 
 import com.medroid.domain.ApplicationConversionServiceFactoryBean;
-import com.medroid.domain.Attendingdocs;
+import com.medroid.domain.Careteam;
 import com.medroid.domain.Doctor;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.DoctorMessages;
@@ -22,26 +22,26 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
     
-    public Converter<Attendingdocs, String> ApplicationConversionServiceFactoryBean.getAttendingdocsToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<com.medroid.domain.Attendingdocs, java.lang.String>() {
-            public String convert(Attendingdocs attendingdocs) {
+    public Converter<Careteam, String> ApplicationConversionServiceFactoryBean.getCareteamToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.medroid.domain.Careteam, java.lang.String>() {
+            public String convert(Careteam careteam) {
                 return "(no displayable fields)";
             }
         };
     }
     
-    public Converter<Long, Attendingdocs> ApplicationConversionServiceFactoryBean.getIdToAttendingdocsConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.medroid.domain.Attendingdocs>() {
-            public com.medroid.domain.Attendingdocs convert(java.lang.Long id) {
-                return Attendingdocs.findAttendingdocs(id);
+    public Converter<Long, Careteam> ApplicationConversionServiceFactoryBean.getIdToCareteamConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.medroid.domain.Careteam>() {
+            public com.medroid.domain.Careteam convert(java.lang.Long id) {
+                return Careteam.findCareteam(id);
             }
         };
     }
     
-    public Converter<String, Attendingdocs> ApplicationConversionServiceFactoryBean.getStringToAttendingdocsConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.medroid.domain.Attendingdocs>() {
-            public com.medroid.domain.Attendingdocs convert(String id) {
-                return getObject().convert(getObject().convert(id, Long.class), Attendingdocs.class);
+    public Converter<String, Careteam> ApplicationConversionServiceFactoryBean.getStringToCareteamConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.medroid.domain.Careteam>() {
+            public com.medroid.domain.Careteam convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Careteam.class);
             }
         };
     }
@@ -263,9 +263,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
-        registry.addConverter(getAttendingdocsToStringConverter());
-        registry.addConverter(getIdToAttendingdocsConverter());
-        registry.addConverter(getStringToAttendingdocsConverter());
+        registry.addConverter(getCareteamToStringConverter());
+        registry.addConverter(getIdToCareteamConverter());
+        registry.addConverter(getStringToCareteamConverter());
         registry.addConverter(getDoctorToStringConverter());
         registry.addConverter(getIdToDoctorConverter());
         registry.addConverter(getStringToDoctorConverter());

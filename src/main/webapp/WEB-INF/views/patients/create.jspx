@@ -23,7 +23,7 @@
         <field:input field="Status" id="c_com_medroid_domain_Patient_Status" required="true" z="q4Dbb8cMlgH7wbHBLJZpQFyfrQ0="/>
         <field:input field="HC" id="c_com_medroid_domain_Patient_HC" required="true" z="R8eKUdpL4wqO0XmqgTnK5Jsky38="/>
         <field:input field="SymptomDesc" id="c_com_medroid_domain_Patient_SymptomDesc" required="true" z="lm1+vW6BnG1LqzNAe/zWGHN3EUU="/>
-        <field:simple field="AttendingDoctors" id="c_com_medroid_domain_Patient_AttendingDoctors" messageCode="entity_reference_not_managed" messageCodeAttribute="Attendingdocs" z="mnuDiPDAi4XXq2cvZG8gxKC9DXI="/>
+        <field:simple field="AttendingDoctors" id="c_com_medroid_domain_Patient_AttendingDoctors" messageCode="entity_reference_not_managed" messageCodeAttribute="Careteam" z="UC2U65uNssYxfyqJKpx231h96HQ="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_Patient" render="${not empty dependencies}" z="TjOmKZrwimSYswkVa7F/4DAoGXY="/>
 </div>

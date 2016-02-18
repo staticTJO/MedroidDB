@@ -39,9 +39,12 @@
             <menu:item id="i_patient_new" messageCode="global_menu_new" url="/patients?form" z="/FWw96bQNbLZGfOq6+cGeWYQz8Y="/>
             <menu:item id="i_patient_list" messageCode="global_menu_list" url="/patients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="mnvxypr4za1eNqrO8/rSPpLv4/U="/>
         </menu:category>
-        <menu:category id="c_attendingdocs" z="9Vsks4Mk+iZRV9zxNxJfp+wQOQc=">
-            <menu:item id="i_attendingdocs_new" messageCode="global_menu_new" url="/attendingdocses?form" z="KoYG4izLkzTV+1xf0CxZ5DYv0Aw="/>
-            <menu:item id="i_attendingdocs_list" messageCode="global_menu_list" url="/attendingdocses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="EnOWFF7x0I3OFvPVQEbNkfWhH24="/>
+        <menu:category id="c_careteam" z="gjt4ggUakrSn6C6ECoSoAnH3vtU=">
+            <menu:item id="i_careteam_new" messageCode="global_menu_new" url="/careteams?form" z="ngnhpv7wMUElny3SEA/hu/TucsE="/>
+            <menu:item id="i_careteam_list" messageCode="global_menu_list" url="/careteams?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Agz5MawCedv2u4PZqie1eAv9hAI="/>
+        </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__jsonpatientdoctorsindex_id" messageCode="global_generic" url="/jsonpatientdoctors/index" z="c4pSyFCLjPXDt5D04R/dfw7tp18="/>
         </menu:category>
     </menu:menu>
 </div>

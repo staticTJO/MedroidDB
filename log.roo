@@ -190,3 +190,38 @@ focus --class ~.domain.Attendingdocs
 field reference --fieldName doctor --type ~.domain.Doctor --cardinality MANY_TO_ONE 
 focus --class ~.domain.PatientAllergies
 field string --fieldName Allergy 
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-17 05:21:21
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-17 14:15:51
+web mvc json all 
+web mvc json all 
+web mvc json all 
+web mvc all --package com.medroid.domain
+web mvc json all 
+json all 
+web mvc json all
+json all 
+// [failed] web mvc json all
+// [failed] web mvc json all
+// [failed] controller all --package com.medroid.domain
+// [failed] web mvc all --package com.medroid.domain
+// [failed] entity jpa --class ~.domain.Careteam
+// [failed] entity jpa --class ~.domain.careteam
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-17 14:42:02
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-17 14:42:23
+entity jpa --class ~.domain.Careteam
+json all 
+web mvc json all 
+web mvc all --package com.medroid.domain
+web mvc json all 
+json all 
+controller scaffold --class ~.domain.JsonQueryDoctors 
+controller scaffold --class ~.domain.JsonQueryDoctors 
+web mvc scaffold --class ~.domain.JsonQueryDoctors 
+controller class --class ~.domain.JsonQueryDoctors 
+web mvc scaffold --class ~.domain.JsonQueryDoctors
+web mvc controller --class ~.domain.JsonPatientDoctors
+// [failed] focus --class ~.domain.JsonQueryDoctors
+controller class --class ~.domain.JsonPatientDoctors --preferredMapping /jsonpatientdoctors
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-18 01:34:58
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-18 01:37:42
+web mvc controller --class ~.domain.JsonPatientDoctors

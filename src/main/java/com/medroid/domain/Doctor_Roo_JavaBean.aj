@@ -3,7 +3,7 @@
 
 package com.medroid.domain;
 
-import com.medroid.domain.Attendingdocs;
+import com.medroid.domain.Careteam;
 import com.medroid.domain.Doctor;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.DoctorMessages;
@@ -92,11 +92,11 @@ privileged aspect Doctor_Roo_JavaBean {
         this.status = status;
     }
     
-    public Set<Attendingdocs> Doctor.getAttendingpatients() {
+    public Set<Careteam> Doctor.getAttendingpatients() {
         return this.attendingpatients;
     }
     
-    public void Doctor.setAttendingpatients(Set<Attendingdocs> attendingpatients) {
+    public void Doctor.setAttendingpatients(Set<Careteam> attendingpatients) {
         this.attendingpatients = attendingpatients;
     }
     

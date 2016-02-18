@@ -10,11 +10,12 @@ import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.validation.constraints.Max;
-import javax.persistence.ManyToOne;
+import org.springframework.roo.addon.json.RooJson;
 
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+@RooJson
 public class Patient {
 
     /**
@@ -124,6 +125,6 @@ public class Patient {
 
     /**
      */
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
-    private Set<Attendingdocs> AttendingDoctors = new HashSet<Attendingdocs>();
+@OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
+    private Set<Careteam > AttendingDoctors = new HashSet<Careteam>();
 }
