@@ -4,7 +4,6 @@
 <aspect name="com.medroid.domain.PatientNotifications_Roo_ToString"/>
 <aspect name="com.medroid.domain.LogUserPatient_Roo_Json"/>
 <aspect name="com.medroid.domain.LogUserDoctorController_Roo_Controller"/>
-<aspect name="com.medroid.domain.LogUser_Roo_Configurable"/>
 <aspect name="com.medroid.domain.LogUserPatient_Roo_ToString"/>
 <aspect name="com.medroid.domain.DoctorNotifications_Roo_Configurable"/>
 <aspect name="com.medroid.domain.DoctorMessagesController_Roo_Controller"/>
@@ -31,8 +30,8 @@
 <aspect name="com.medroid.domain.PatientMedications_Roo_ToString"/>
 <aspect name="com.medroid.domain.Patient_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.PatientAllergiesController_Roo_Controller"/>
-<aspect name="com.medroid.domain.PatientMessages_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.PatientMedications_Roo_Json"/>
+<aspect name="com.medroid.domain.PatientMessages_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.LogUserPatient_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.medroid.domain.LogUserDoctor_Roo_Configurable"/>
 <aspect name="com.medroid.domain.PatientNotifications_Roo_Json"/>
@@ -44,13 +43,11 @@
 <aspect name="com.medroid.domain.PatientMedications_Roo_Configurable"/>
 <aspect name="com.medroid.domain.DoctorNotifications_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.DoctorMessagesController_Roo_Controller_Json"/>
-<aspect name="com.medroid.domain.LogUser_Roo_Jpa_Entity"/>
 <aspect name="com.medroid.domain.Careteam_Roo_Json"/>
 <aspect name="com.medroid.domain.LogUserDoctor_Roo_ToString"/>
 <aspect name="com.medroid.domain.Doctor_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.PatientNotifications_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.Patient_Roo_Jpa_Entity"/>
-<aspect name="com.medroid.domain.LogUser_Roo_Json"/>
 <aspect name="com.medroid.domain.DoctorNotifications_Roo_Jpa_Entity"/>
 <aspect name="com.medroid.domain.DoctorNotifications_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.medroid.domain.DoctorNotificationsController_Roo_Controller"/>
@@ -74,7 +71,6 @@
 <aspect name="com.medroid.domain.DoctorNotifications_Roo_Json"/>
 <aspect name="com.medroid.domain.LogUserPatientController_Roo_Controller"/>
 <aspect name="com.medroid.domain.LogUserPatient_Roo_JavaBean"/>
-<aspect name="com.medroid.domain.LogUser_Roo_ToString"/>
 <aspect name="com.medroid.domain.PatientMedications_Roo_Jpa_Entity"/>
 <aspect name="com.medroid.domain.PatientAllergies_Roo_Jpa_Entity"/>
 <aspect name="com.medroid.domain.PatientNotifications_Roo_Jpa_Entity"/>
@@ -85,12 +81,11 @@
 <aspect name="com.medroid.domain.CareteamController_Roo_Controller_Json"/>
 <aspect name="com.medroid.domain.CareteamController_Roo_Controller"/>
 <aspect name="com.medroid.domain.LogUserDoctor_Roo_Jpa_Entity"/>
-<aspect name="com.medroid.domain.Careteam_Roo_Configurable"/>
 <aspect name="com.medroid.domain.PatientAllergies_Roo_Configurable"/>
+<aspect name="com.medroid.domain.Careteam_Roo_Configurable"/>
 <aspect name="com.medroid.domain.DoctorDiagnosis_Roo_JavaBean"/>
 <aspect name="com.medroid.domain.PatientController_Roo_Controller"/>
 <aspect name="com.medroid.domain.Patient_Roo_ToString"/>
-<aspect name="com.medroid.domain.LogUser_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.medroid.domain.DoctorDiagnosis_Roo_Jpa_Entity"/>
 <aspect name="com.medroid.domain.PatientController_Roo_Controller_Json"/>
 <aspect name="com.medroid.domain.DoctorMessages_Roo_JavaBean"/>
