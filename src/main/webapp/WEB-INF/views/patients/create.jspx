@@ -23,6 +23,7 @@
         <field:simple field="AttendingDoctors" id="c_com_medroid_domain_Patient_AttendingDoctors" messageCode="entity_reference_not_managed" messageCodeAttribute="Careteam" z="UC2U65uNssYxfyqJKpx231h96HQ="/>
         <field:input field="status" id="c_com_medroid_domain_Patient_status" required="true" z="+mnsXeTh9hZ1GVZW/Rwz7sgAMfM="/>
         <field:select field="patientlogin" id="c_com_medroid_domain_Patient_patientlogin" itemValue="id" items="${patients}" path="/patients" z="dZEXP16fA1O8HK70KPjoW0858kg="/>
+        <field:input field="estimatedDischargeDate" id="c_com_medroid_domain_Patient_estimatedDischargeDate" z="Bm3G1G9/KvMEGt6bHNvjkOWdVtI="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_Patient" render="${not empty dependencies}" z="TjOmKZrwimSYswkVa7F/4DAoGXY="/>
 </div>

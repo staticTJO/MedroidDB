@@ -28,6 +28,7 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
         setBloodtype(obj, index);
         setCity(obj, index);
         setDOB(obj, index);
+        setEstimatedDischargeDate(obj, index);
         setFirstName(obj, index);
         setHC(obj, index);
         setLastName(obj, index);
@@ -62,6 +63,11 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
     public void MedroidDataOnDemand.setDOB(Patient obj, int index) {
         String DOB = "DOB_" + index;
         obj.setDOB(DOB);
+    }
+    
+    public void MedroidDataOnDemand.setEstimatedDischargeDate(Patient obj, int index) {
+        String estimatedDischargeDate = "estimatedDischargeDate_" + index;
+        obj.setEstimatedDischargeDate(estimatedDischargeDate);
     }
     
     public void MedroidDataOnDemand.setFirstName(Patient obj, int index) {

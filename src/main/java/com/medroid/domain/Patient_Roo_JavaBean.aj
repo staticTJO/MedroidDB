@@ -174,4 +174,12 @@ privileged aspect Patient_Roo_JavaBean {
         this.patientlogin = patientlogin;
     }
     
+    public String Patient.getEstimatedDischargeDate() {
+        return this.estimatedDischargeDate;
+    }
+    
+    public void Patient.setEstimatedDischargeDate(String estimatedDischargeDate) {
+        this.estimatedDischargeDate = estimatedDischargeDate;
+    }
+    
 }

@@ -17,5 +17,6 @@
         <field:display field="symptomDesc" id="s_com_medroid_domain_Patient_SymptomDesc" object="${patient}" z="J9wGV00KKtMkcE5k2FFWJgwG1sM="/>
         <field:display field="status" id="s_com_medroid_domain_Patient_status" object="${patient}" z="LhBHh0LHUJieK2sahZaxOxirbLc="/>
         <field:display field="patientlogin" id="s_com_medroid_domain_Patient_patientlogin" object="${patient}" z="Bewv6yas16lKKDB3+VpC5hooksA="/>
+        <field:display field="estimatedDischargeDate" id="s_com_medroid_domain_Patient_estimatedDischargeDate" object="${patient}" z="4+ZpxY+SNyfmen29TyuBLkXFu80="/>
     </page:show>
 </div>

@@ -123,4 +123,8 @@ public class Patient {
      */
     @OneToOne
     private Patient patientlogin;
+
+    /**
+     */
+    private String estimatedDischargeDate;
 }
