@@ -10,6 +10,8 @@ import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import org.springframework.roo.addon.json.RooJson;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 
 @RooJavaBean
 @RooToString
@@ -39,17 +41,6 @@ public class Doctor {
     /**
      */
     @NotNull
-    @Size(min = 8)
-    private String Password;
-
-    /**
-     */
-    @NotNull
-    private String UserName;
-
-    /**
-     */
-    @NotNull
     @Size(min = 3)
     private String FirstName;
 
@@ -71,6 +62,11 @@ public class Doctor {
 
     /**
      */
-  @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
     private Set<Careteam> attendingpatients = new HashSet<Careteam>();
+
+    /**
+     */
+    @OneToOne
+    private Doctor doctorlogin;
 }

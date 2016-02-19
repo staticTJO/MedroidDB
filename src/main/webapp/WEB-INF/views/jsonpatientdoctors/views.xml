@@ -5,7 +5,7 @@
         <put-attribute name="body" value="/WEB-INF/views/jsonpatientdoctors/index.jspx"/>
     </definition>
     
-     <definition extends="default" name="jsonpatientdoctors/GETPATIENTS">
+     <definition extends="default" name="jsonpatientdoctors/GetDoctorsByPatientID">
         <put-attribute name="body" value="/WEB-INF/views/jsonpatientdoctors/index.jspx"/>
     </definition>
 </tiles-definitions>

@@ -5,7 +5,6 @@
     <page:list id="pl_com_medroid_domain_PatientMedications" items="${patientmedicationses}" z="zZJsYL2XwzrzxQQ0lV8cMNJMlRE=">
         <table:table data="${patientmedicationses}" id="l_com_medroid_domain_PatientMedications" path="/patientmedicationses" z="vUQgl6+TmVZ87gyotr/BEAjYhpk=">
             <table:column id="c_com_medroid_domain_PatientMedications_patient" property="patient" z="Z+F8+NVoZhVrsGTBl/ZAKmTve8I="/>
-            <table:column id="c_com_medroid_domain_PatientMedications_Allergy" property="allergy" z="Xvn6tkzhctoK7ZKJ75l1VOdDPVI="/>
             <table:column id="c_com_medroid_domain_PatientMedications_Medication" property="medication" z="8hUriPvQSAud9/kvIgbJHRkuVpw="/>
         </table:table>
     </page:list>

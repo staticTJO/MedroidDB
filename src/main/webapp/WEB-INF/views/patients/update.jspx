@@ -9,8 +9,6 @@
         <field:simple field="PatientAllergies" id="c_com_medroid_domain_Patient_PatientAllergies" messageCode="entity_reference_not_managed" messageCodeAttribute="Patient Allergies" z="LAmdHEwBy7GdbnML+qotFkRLHsE="/>
         <field:simple field="Diagnosis" id="c_com_medroid_domain_Patient_Diagnosis" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Diagnosis" z="afolX61PGO41LaJXRGqAB9r0Z2U="/>
         <field:input field="patientID" id="c_com_medroid_domain_Patient_patientID" required="true" z="PuEiprNI6fpAYL90khsuwSLJF6k="/>
-        <field:input field="UserName" id="c_com_medroid_domain_Patient_UserName" required="true" z="Mv04RIxLuIFLgnRKFLy4/xqwCcM="/>
-        <field:input field="Password" id="c_com_medroid_domain_Patient_Password" min="8" required="true" z="c1oOnskJtH0jP4r9G27EQ52gMtk="/>
         <field:input field="FirstName" id="c_com_medroid_domain_Patient_FirstName" min="3" required="true" z="1IQwwzEWpM1m9l3M9DIYAVU55dI="/>
         <field:input field="LastName" id="c_com_medroid_domain_Patient_LastName" min="3" required="true" z="Q1kxhASNPIfgDQAi3/lQ0/Z29FM="/>
         <field:input field="MiddleName" id="c_com_medroid_domain_Patient_MiddleName" min="3" required="true" z="y8juWenwapkRdQ+wLpXhYFpggPY="/>
@@ -20,9 +18,10 @@
         <field:input field="City" id="c_com_medroid_domain_Patient_City" required="true" z="32eHD78QB/jDZfJNknFGz2kZj2U="/>
         <field:input field="Prov" id="c_com_medroid_domain_Patient_Prov" required="true" z="BSaeoWo/LliaHxHh6AXJCwdShiI="/>
         <field:input field="Bloodtype" id="c_com_medroid_domain_Patient_Bloodtype" required="true" z="KKbDg6+N3c2b/pDPRHEpVyiZtxE="/>
-        <field:input field="Status" id="c_com_medroid_domain_Patient_Status" required="true" z="q4Dbb8cMlgH7wbHBLJZpQFyfrQ0="/>
         <field:input field="HC" id="c_com_medroid_domain_Patient_HC" required="true" z="R8eKUdpL4wqO0XmqgTnK5Jsky38="/>
         <field:input field="SymptomDesc" id="c_com_medroid_domain_Patient_SymptomDesc" required="true" z="lm1+vW6BnG1LqzNAe/zWGHN3EUU="/>
         <field:simple field="AttendingDoctors" id="c_com_medroid_domain_Patient_AttendingDoctors" messageCode="entity_reference_not_managed" messageCodeAttribute="Careteam" z="UC2U65uNssYxfyqJKpx231h96HQ="/>
+        <field:input field="status" id="c_com_medroid_domain_Patient_status" required="true" z="+mnsXeTh9hZ1GVZW/Rwz7sgAMfM="/>
+        <field:select field="patientlogin" id="c_com_medroid_domain_Patient_patientlogin" itemValue="id" items="${patients}" path="/patients" z="dZEXP16fA1O8HK70KPjoW0858kg="/>
     </form:update>
 </div>

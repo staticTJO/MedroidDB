@@ -4,8 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_medroid_domain_Patient" object="${patient}" path="/patients" z="+QdFl9nhtuakfdb5Hyj5sQ8JNmo=">
         <field:display field="patientID" id="s_com_medroid_domain_Patient_patientID" object="${patient}" z="HCQ4RYZsZ61f0XM9ZPuv5DbM5As="/>
-        <field:display field="userName" id="s_com_medroid_domain_Patient_UserName" object="${patient}" z="l9LxtzmmUFjgsGYm+cY1mYiJc+M="/>
-        <field:display field="password" id="s_com_medroid_domain_Patient_Password" object="${patient}" z="VOIH1vkfw89s4YdGFA0JN+2ygDQ="/>
         <field:display field="firstName" id="s_com_medroid_domain_Patient_FirstName" object="${patient}" z="eVeOxEGR92GEwyjCACFEN7Bdd5c="/>
         <field:display field="lastName" id="s_com_medroid_domain_Patient_LastName" object="${patient}" z="w9HovbItGsX+Tov8rgcNYeHBPaU="/>
         <field:display field="middleName" id="s_com_medroid_domain_Patient_MiddleName" object="${patient}" z="weqgZwGmm3tvxQEx6aHoZUMGtwA="/>
@@ -15,8 +13,9 @@
         <field:display field="city" id="s_com_medroid_domain_Patient_City" object="${patient}" z="/LFaqy8cSPetIG0m7BbswClKbOs="/>
         <field:display field="prov" id="s_com_medroid_domain_Patient_Prov" object="${patient}" z="cc9bT45gGyGxYnkEMCUL0Y+kkM8="/>
         <field:display field="bloodtype" id="s_com_medroid_domain_Patient_Bloodtype" object="${patient}" z="42D7B/xYecvGQl/G7JZgMyBfIr8="/>
-        <field:display field="status" id="s_com_medroid_domain_Patient_Status" object="${patient}" z="HQLNRJYxXvKdyt27+Tgwduyk8hg="/>
         <field:display field="HC" id="s_com_medroid_domain_Patient_HC" object="${patient}" z="Ag6azOjwZRjWwNkJMciO5TkZqqM="/>
         <field:display field="symptomDesc" id="s_com_medroid_domain_Patient_SymptomDesc" object="${patient}" z="J9wGV00KKtMkcE5k2FFWJgwG1sM="/>
+        <field:display field="status" id="s_com_medroid_domain_Patient_status" object="${patient}" z="LhBHh0LHUJieK2sahZaxOxirbLc="/>
+        <field:display field="patientlogin" id="s_com_medroid_domain_Patient_patientlogin" object="${patient}" z="Bewv6yas16lKKDB3+VpC5hooksA="/>
     </page:show>
 </div>

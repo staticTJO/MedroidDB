@@ -11,6 +11,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.validation.constraints.Max;
 import org.springframework.roo.addon.json.RooJson;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @RooJavaBean
 @RooToString
@@ -48,17 +50,6 @@ public class Patient {
     @NotNull
     @Column(name = "id", unique = true, insertable = false, updatable = false)
     private int patientID;
-
-    /**
-     */
-    @NotNull
-    private String UserName;
-
-    /**
-     */
-    @NotNull
-    @Size(min = 8)
-    private String Password;
 
     /**
      */
@@ -111,7 +102,7 @@ public class Patient {
     /**
      */
     @NotNull
-    private String Status;
+    private String status;
 
     /**
      */
@@ -125,6 +116,11 @@ public class Patient {
 
     /**
      */
-@OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
-    private Set<Careteam > AttendingDoctors = new HashSet<Careteam>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
+    private Set<Careteam> AttendingDoctors = new HashSet<Careteam>();
+
+    /**
+     */
+    @OneToOne
+    private Patient patientlogin;
 }

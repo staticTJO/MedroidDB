@@ -16,14 +16,6 @@ privileged aspect PatientMedications_Roo_JavaBean {
         this.patient = patient;
     }
     
-    public String PatientMedications.getAllergy() {
-        return this.Allergy;
-    }
-    
-    public void PatientMedications.setAllergy(String Allergy) {
-        this.Allergy = Allergy;
-    }
-    
     public String PatientMedications.getMedication() {
         return this.Medication;
     }

@@ -1,8 +1,8 @@
 <aspectj>
 <aspects>
+<aspect name="com.medroid.domain.MedroidIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.medroid.domain.MedroidDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="com.medroid.domain.MedroidIntegrationTest_Roo_Configurable"/>
-<aspect name="com.medroid.domain.MedroidIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.medroid.domain.MedroidDataOnDemand_Roo_Configurable"/>
 </aspects>
 </aspectj>

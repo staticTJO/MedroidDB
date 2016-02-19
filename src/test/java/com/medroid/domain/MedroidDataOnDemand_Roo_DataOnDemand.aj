@@ -32,13 +32,12 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
         setHC(obj, index);
         setLastName(obj, index);
         setMiddleName(obj, index);
-        setPassword(obj, index);
         setPatientID(obj, index);
+        setPatientlogin(obj, index);
         setProv(obj, index);
         setSex(obj, index);
         setStatus(obj, index);
         setSymptomDesc(obj, index);
-        setUserName(obj, index);
         return obj;
     }
     
@@ -85,14 +84,14 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
         obj.setMiddleName(MiddleName);
     }
     
-    public void MedroidDataOnDemand.setPassword(Patient obj, int index) {
-        String Password = "Password_" + index;
-        obj.setPassword(Password);
-    }
-    
     public void MedroidDataOnDemand.setPatientID(Patient obj, int index) {
         int patientID = index;
         obj.setPatientID(patientID);
+    }
+    
+    public void MedroidDataOnDemand.setPatientlogin(Patient obj, int index) {
+        Patient patientlogin = obj;
+        obj.setPatientlogin(patientlogin);
     }
     
     public void MedroidDataOnDemand.setProv(Patient obj, int index) {
@@ -106,18 +105,13 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
     }
     
     public void MedroidDataOnDemand.setStatus(Patient obj, int index) {
-        String Status = "Status_" + index;
-        obj.setStatus(Status);
+        String status = "status_" + index;
+        obj.setStatus(status);
     }
     
     public void MedroidDataOnDemand.setSymptomDesc(Patient obj, int index) {
         String SymptomDesc = "SymptomDesc_" + index;
         obj.setSymptomDesc(SymptomDesc);
-    }
-    
-    public void MedroidDataOnDemand.setUserName(Patient obj, int index) {
-        String UserName = "UserName_" + index;
-        obj.setUserName(UserName);
     }
     
     public Patient MedroidDataOnDemand.getSpecificPatient(int index) {

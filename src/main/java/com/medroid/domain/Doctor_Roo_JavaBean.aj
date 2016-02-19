@@ -44,22 +44,6 @@ privileged aspect Doctor_Roo_JavaBean {
         this.doctorID = doctorID;
     }
     
-    public String Doctor.getPassword() {
-        return this.Password;
-    }
-    
-    public void Doctor.setPassword(String Password) {
-        this.Password = Password;
-    }
-    
-    public String Doctor.getUserName() {
-        return this.UserName;
-    }
-    
-    public void Doctor.setUserName(String UserName) {
-        this.UserName = UserName;
-    }
-    
     public String Doctor.getFirstName() {
         return this.FirstName;
     }
@@ -98,6 +82,14 @@ privileged aspect Doctor_Roo_JavaBean {
     
     public void Doctor.setAttendingpatients(Set<Careteam> attendingpatients) {
         this.attendingpatients = attendingpatients;
+    }
+    
+    public Doctor Doctor.getDoctorlogin() {
+        return this.doctorlogin;
+    }
+    
+    public void Doctor.setDoctorlogin(Doctor doctorlogin) {
+        this.doctorlogin = doctorlogin;
     }
     
 }

@@ -9,6 +9,8 @@ import com.medroid.domain.Doctor;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.DoctorMessages;
 import com.medroid.domain.DoctorNotifications;
+import com.medroid.domain.LogUserDoctor;
+import com.medroid.domain.LogUserPatient;
 import com.medroid.domain.Patient;
 import com.medroid.domain.PatientAllergies;
 import com.medroid.domain.PatientMedications;
@@ -49,7 +51,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Doctor, String> ApplicationConversionServiceFactoryBean.getDoctorToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.medroid.domain.Doctor, java.lang.String>() {
             public String convert(Doctor doctor) {
-                return new StringBuilder().append(doctor.getDoctorID()).append(' ').append(doctor.getPassword()).append(' ').append(doctor.getUserName()).append(' ').append(doctor.getFirstName()).toString();
+                return new StringBuilder().append(doctor.getDoctorID()).append(' ').append(doctor.getFirstName()).append(' ').append(doctor.getLastName()).append(' ').append(doctor.getSpecialty()).toString();
             }
         };
     }
@@ -142,10 +144,58 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<LogUserDoctor, String> ApplicationConversionServiceFactoryBean.getLogUserDoctorToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.medroid.domain.LogUserDoctor, java.lang.String>() {
+            public String convert(LogUserDoctor logUserDoctor) {
+                return new StringBuilder().append(logUserDoctor.getUsername()).append(' ').append(logUserDoctor.getPassword()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, LogUserDoctor> ApplicationConversionServiceFactoryBean.getIdToLogUserDoctorConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.medroid.domain.LogUserDoctor>() {
+            public com.medroid.domain.LogUserDoctor convert(java.lang.Long id) {
+                return LogUserDoctor.findLogUserDoctor(id);
+            }
+        };
+    }
+    
+    public Converter<String, LogUserDoctor> ApplicationConversionServiceFactoryBean.getStringToLogUserDoctorConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.medroid.domain.LogUserDoctor>() {
+            public com.medroid.domain.LogUserDoctor convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), LogUserDoctor.class);
+            }
+        };
+    }
+    
+    public Converter<LogUserPatient, String> ApplicationConversionServiceFactoryBean.getLogUserPatientToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.medroid.domain.LogUserPatient, java.lang.String>() {
+            public String convert(LogUserPatient logUserPatient) {
+                return new StringBuilder().append(logUserPatient.getUsername()).append(' ').append(logUserPatient.getPassword()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, LogUserPatient> ApplicationConversionServiceFactoryBean.getIdToLogUserPatientConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.medroid.domain.LogUserPatient>() {
+            public com.medroid.domain.LogUserPatient convert(java.lang.Long id) {
+                return LogUserPatient.findLogUserPatient(id);
+            }
+        };
+    }
+    
+    public Converter<String, LogUserPatient> ApplicationConversionServiceFactoryBean.getStringToLogUserPatientConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.medroid.domain.LogUserPatient>() {
+            public com.medroid.domain.LogUserPatient convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), LogUserPatient.class);
+            }
+        };
+    }
+    
     public Converter<Patient, String> ApplicationConversionServiceFactoryBean.getPatientToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.medroid.domain.Patient, java.lang.String>() {
             public String convert(Patient patient) {
-                return new StringBuilder().append(patient.getPatientID()).append(' ').append(patient.getUserName()).append(' ').append(patient.getPassword()).append(' ').append(patient.getFirstName()).toString();
+                return new StringBuilder().append(patient.getPatientID()).append(' ').append(patient.getFirstName()).append(' ').append(patient.getLastName()).append(' ').append(patient.getMiddleName()).toString();
             }
         };
     }
@@ -193,7 +243,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<PatientMedications, String> ApplicationConversionServiceFactoryBean.getPatientMedicationsToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.medroid.domain.PatientMedications, java.lang.String>() {
             public String convert(PatientMedications patientMedications) {
-                return new StringBuilder().append(patientMedications.getAllergy()).append(' ').append(patientMedications.getMedication()).toString();
+                return new StringBuilder().append(patientMedications.getMedication()).toString();
             }
         };
     }
@@ -278,6 +328,12 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getDoctorNotificationsToStringConverter());
         registry.addConverter(getIdToDoctorNotificationsConverter());
         registry.addConverter(getStringToDoctorNotificationsConverter());
+        registry.addConverter(getLogUserDoctorToStringConverter());
+        registry.addConverter(getIdToLogUserDoctorConverter());
+        registry.addConverter(getStringToLogUserDoctorConverter());
+        registry.addConverter(getLogUserPatientToStringConverter());
+        registry.addConverter(getIdToLogUserPatientConverter());
+        registry.addConverter(getStringToLogUserPatientConverter());
         registry.addConverter(getPatientToStringConverter());
         registry.addConverter(getIdToPatientConverter());
         registry.addConverter(getStringToPatientConverter());

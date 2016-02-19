@@ -94,6 +94,7 @@ privileged aspect PatientController_Roo_Controller {
         uiModel.addAttribute("patient", patient);
         uiModel.addAttribute("careteams", Careteam.findAllCareteams());
         uiModel.addAttribute("doctordiagnoses", DoctorDiagnosis.findAllDoctorDiagnoses());
+        uiModel.addAttribute("patients", Patient.findAllPatients());
         uiModel.addAttribute("patientallergieses", PatientAllergies.findAllPatientAllergieses());
         uiModel.addAttribute("patientmedicationses", PatientMedications.findAllPatientMedicationses());
         uiModel.addAttribute("patientmessageses", PatientMessages.findAllPatientMessageses());

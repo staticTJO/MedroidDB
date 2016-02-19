@@ -62,22 +62,6 @@ privileged aspect Patient_Roo_JavaBean {
         this.patientID = patientID;
     }
     
-    public String Patient.getUserName() {
-        return this.UserName;
-    }
-    
-    public void Patient.setUserName(String UserName) {
-        this.UserName = UserName;
-    }
-    
-    public String Patient.getPassword() {
-        return this.Password;
-    }
-    
-    public void Patient.setPassword(String Password) {
-        this.Password = Password;
-    }
-    
     public String Patient.getFirstName() {
         return this.FirstName;
     }
@@ -151,11 +135,11 @@ privileged aspect Patient_Roo_JavaBean {
     }
     
     public String Patient.getStatus() {
-        return this.Status;
+        return this.status;
     }
     
-    public void Patient.setStatus(String Status) {
-        this.Status = Status;
+    public void Patient.setStatus(String status) {
+        this.status = status;
     }
     
     public String Patient.getHC() {
@@ -180,6 +164,14 @@ privileged aspect Patient_Roo_JavaBean {
     
     public void Patient.setAttendingDoctors(Set<Careteam> AttendingDoctors) {
         this.AttendingDoctors = AttendingDoctors;
+    }
+    
+    public Patient Patient.getPatientlogin() {
+        return this.patientlogin;
+    }
+    
+    public void Patient.setPatientlogin(Patient patientlogin) {
+        this.patientlogin = patientlogin;
     }
     
 }

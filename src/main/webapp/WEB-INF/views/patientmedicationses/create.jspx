@@ -4,7 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_medroid_domain_PatientMedications" modelAttribute="patientMedications" path="/patientmedicationses" render="${empty dependencies}" z="ApreDCHlHRr1TdAa11L+RcIZF9U=">
         <field:select field="patient" id="c_com_medroid_domain_PatientMedications_patient" itemValue="id" items="${patients}" path="/patients" required="true" z="3En0KquJfljrOJPwOOiYCN8N+MY="/>
-        <field:input field="Allergy" id="c_com_medroid_domain_PatientMedications_Allergy" z="sE2u9MeY4TEyWEOOLkCfZvMZZr8="/>
         <field:input field="Medication" id="c_com_medroid_domain_PatientMedications_Medication" z="zf2v2l5Q7heKr/Hrayb/YMq7bmU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_PatientMedications" render="${not empty dependencies}" z="3ZfKrp0VF6PQ0j9pHgVoQsoyb4I="/>

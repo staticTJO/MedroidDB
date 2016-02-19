@@ -225,3 +225,31 @@ controller class --class ~.domain.JsonPatientDoctors --preferredMapping /jsonpat
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-02-18 01:34:58
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-02-18 01:37:42
 web mvc controller --class ~.domain.JsonPatientDoctors
+focus --class ~.domain.JsonDoctorPatients
+web mvc controller --class ~.domain.JsonDoctorPatients 
+entity jpa --class ~.domain.LogUser 
+entity jpa --class ~.domain.LogUserPatient
+entity jpa --class ~.domain.LogUserDoctor
+focus --class ~.domain.LogUserPatient
+field string --fieldName username
+field string --fieldName password
+focus --class ~.domain.LogUserDoctor
+field string --fieldName username
+field string --fieldName password
+field reference --fieldName patient --type ~.domain.Patient --cardinality MANY_TO_ONE 
+focus --class ~.domain.Doctor
+focus --class ~.domain.Doctor
+// [failed] field set --fieldName doctor --type ~.domain.Doctor --cardinality ONE_TO_ONE --mappedBy patientlogin
+field set --fieldName doctorlogin --type ~.domain.Doctor 
+// [failed] field set --fieldName doctorlogin --type ~.domain.Doctor --cardinality ONE_TO_ONE 
+// [failed] field reference --fieldName doctorlogin --type ~.domain.Doctor --cardinality ONE_TO_ONE 
+field reference --fieldName doctorlogin --type ~.domain.Doctor --cardinality ONE_TO_ONE 
+focus --class ~.domain.Patient 
+field reference --fieldName patientlogin --type ~.domain.Patient
+field reference --fieldName patientlogin --type ~.domain.Patient --cardinality ONE_TO_ONE 
+focus --class ~.domain.LogUserPatient
+field reference --fieldName patient --type ~.domain.Patient --cardinality ONE_TO_ONE 
+focus --class ~.domain.LogUserDoctor
+field reference --fieldName doctor --type ~.domain.Doctor --cardinality ONE_TO_ONE
+web mvc all --package com.medroid.domain
+json all 

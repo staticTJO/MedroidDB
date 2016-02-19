@@ -91,6 +91,7 @@ privileged aspect DoctorController_Roo_Controller {
     void DoctorController.populateEditForm(Model uiModel, Doctor doctor) {
         uiModel.addAttribute("doctor", doctor);
         uiModel.addAttribute("careteams", Careteam.findAllCareteams());
+        uiModel.addAttribute("doctors", Doctor.findAllDoctors());
         uiModel.addAttribute("doctordiagnoses", DoctorDiagnosis.findAllDoctorDiagnoses());
         uiModel.addAttribute("doctormessageses", DoctorMessages.findAllDoctorMessageses());
         uiModel.addAttribute("doctornotificationses", DoctorNotifications.findAllDoctorNotificationses());

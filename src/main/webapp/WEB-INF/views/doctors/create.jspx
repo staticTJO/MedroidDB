@@ -7,13 +7,12 @@
         <field:simple field="DoctorNotifications" id="c_com_medroid_domain_Doctor_DoctorNotifications" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Notifications" z="YTviP1yGB/xBmGxhZa03cDPYEQ8="/>
         <field:simple field="DoctorDiagnosis" id="c_com_medroid_domain_Doctor_DoctorDiagnosis" messageCode="entity_reference_not_managed" messageCodeAttribute="Doctor Diagnosis" z="XcmOI9u/UoKT3FW+OhfycHQxI48="/>
         <field:input field="doctorID" id="c_com_medroid_domain_Doctor_doctorID" required="true" z="xXJHp0tAaSrJfc0tU1PtBrpVj4I="/>
-        <field:input field="Password" id="c_com_medroid_domain_Doctor_Password" min="8" required="true" z="6YUtL56g3bYI9vmsensZFkDBM48="/>
-        <field:input field="UserName" id="c_com_medroid_domain_Doctor_UserName" required="true" z="2JCOq0lNYvm7oxwlkvIt6QEsnGY="/>
         <field:input field="FirstName" id="c_com_medroid_domain_Doctor_FirstName" min="3" required="true" z="eQm2yUYTHadZLbpE3kbKZqeSNW8="/>
         <field:input field="LastName" id="c_com_medroid_domain_Doctor_LastName" min="3" required="true" z="Zs8F7On8DnmyBNcp6VX2GWWD6h8="/>
         <field:input field="Specialty" id="c_com_medroid_domain_Doctor_Specialty" required="true" z="5qfEJmrqqUgVhstV4/AKMxh8jkY="/>
         <field:input field="status" id="c_com_medroid_domain_Doctor_status" required="true" z="GBDKtlHFjQ6mMBKI3TI74CPZvqk="/>
         <field:simple field="attendingpatients" id="c_com_medroid_domain_Doctor_attendingpatients" messageCode="entity_reference_not_managed" messageCodeAttribute="Careteam" z="cIuLI8xFjKZxr+2D63X5gHPeeSE="/>
+        <field:select field="doctorlogin" id="c_com_medroid_domain_Doctor_doctorlogin" itemValue="id" items="${doctors}" path="/doctors" z="y9Gvraqa8YPyF5todK3CjbN4MSQ="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_Doctor" render="${not empty dependencies}" z="cgJyD93Z8XRaN+9wDA4LstR2i50="/>
 </div>

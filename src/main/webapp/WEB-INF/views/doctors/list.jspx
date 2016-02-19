@@ -5,8 +5,8 @@
     <page:list id="pl_com_medroid_domain_Doctor" items="${doctors}" z="s+AJ6ro1P2pnbux7KA7xENuBKro=">
         <table:table data="${doctors}" id="l_com_medroid_domain_Doctor" path="/doctors" z="FqVCKEtY6+BcYUt4eLD+owv2bBg=">
             <table:column id="c_com_medroid_domain_Doctor_doctorID" property="doctorID" z="+GUQ+fydVPvprAT6Ab4NA5Ry5MA="/>
-            <table:column id="c_com_medroid_domain_Doctor_Password" property="password" z="D1jqK8XsvLiSNfF3kjeqHM9vKL0="/>
-            <table:column id="c_com_medroid_domain_Doctor_UserName" property="userName" z="4ps70ZXIVomRq3RoOjFF/TSHONA="/>
+            <table:column id="c_com_medroid_domain_Doctor_FirstName" property="firstName" z="mS6jI7Y47eCycVWBbdI8Y3heXTQ="/>
+            <table:column id="c_com_medroid_domain_Doctor_LastName" property="lastName" z="aIYwWUDLItxhkaD6YFqIUOREPl8="/>
         </table:table>
     </page:list>
 </div>

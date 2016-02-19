@@ -18,9 +18,6 @@ public class PatientMedications {
     @ManyToOne
     private Patient patient;
 
-    /**
-     */
-    private String Allergy;
 
     /**
      */

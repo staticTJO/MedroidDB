@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_medroid_domain_LogUserPatient" modelAttribute="logUserPatient" path="/loguserpatients" versionField="Version" z="BrR3XPUuO2RX7tI8qY0c/uKthCo=">
+        <field:input field="username" id="c_com_medroid_domain_LogUserPatient_username" z="ZzOFpck/92zmvCkMkiB7P0odeJM="/>
+        <field:input field="password" id="c_com_medroid_domain_LogUserPatient_password" z="alS8DavSwy7lf5RbFCa+pWFEsQU="/>
+        <field:select field="patient" id="c_com_medroid_domain_LogUserPatient_patient" itemValue="id" items="${patients}" path="/patients" z="NRaRzSwRuZfK8IoqNO8U59qtmKQ="/>
+    </form:update>
+</div>
