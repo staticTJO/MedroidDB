@@ -255,3 +255,4 @@ web mvc all --package com.medroid.domain
 json all 
 focus --class ~.domain.Patient 
 field string --fieldName estimatedDischargeDate
+web mvc json all 
