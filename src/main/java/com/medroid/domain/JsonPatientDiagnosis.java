@@ -39,8 +39,8 @@ public class JsonPatientDiagnosis {
             }
             
             
-           for(int i=0; i < doctordiagnosis.size(); i++){
-        	   DiagnosisJson.add(doctordiagnosis.get(i).getDoctor().toJson());
+           for(int i = 0; i < doctordiagnosis.size(); i++){
+        	   DiagnosisJson.add(doctordiagnosis.get(i).toJson());
             }
 
             
