@@ -4,9 +4,9 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_medroid_domain_PatientMessages" object="${patientmessages}" path="/patientmessageses" z="FhWjFAdeZWWav4H2noDjBCjqX7g=">
         <field:display field="patient" id="s_com_medroid_domain_PatientMessages_patient" object="${patientmessages}" z="6ZutI/Ubl4OOwjntK6Gqb0Bzcec="/>
-        <field:display date="true" dateTimePattern="${patientMessages_daterecorded_date_format}" field="dateRecorded" id="s_com_medroid_domain_PatientMessages_DateRecorded" object="${patientmessages}" z="NzGDx7s+umY9qbm1hIh/afwExLc="/>
         <field:display field="isRead" id="s_com_medroid_domain_PatientMessages_isRead" object="${patientmessages}" z="rCWLMSbOPlMt9FV/HAkJ/0CmmSo="/>
         <field:display field="messagetxt" id="s_com_medroid_domain_PatientMessages_messagetxt" object="${patientmessages}" z="OU1/efBDTOYd5pNWvykbK/rM06k="/>
         <field:display field="doctorID" id="s_com_medroid_domain_PatientMessages_DoctorID" object="${patientmessages}" z="AlGd3EoANHVIFk4B6ypo8twZCt8="/>
+        <field:display field="dateRecorded" id="s_com_medroid_domain_PatientMessages_DateRecorded" object="${patientmessages}" z="ONI+o3WA8YBpQgWZd1e4qFPqkpo="/>
     </page:show>
 </div>

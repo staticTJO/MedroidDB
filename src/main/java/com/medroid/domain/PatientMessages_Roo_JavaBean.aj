@@ -5,7 +5,6 @@ package com.medroid.domain;
 
 import com.medroid.domain.Patient;
 import com.medroid.domain.PatientMessages;
-import java.util.Date;
 
 privileged aspect PatientMessages_Roo_JavaBean {
     
@@ -17,11 +16,11 @@ privileged aspect PatientMessages_Roo_JavaBean {
         this.patient = patient;
     }
     
-    public Date PatientMessages.getDateRecorded() {
+    public String PatientMessages.getDateRecorded() {
         return this.DateRecorded;
     }
     
-    public void PatientMessages.setDateRecorded(Date DateRecorded) {
+    public void PatientMessages.setDateRecorded(String DateRecorded) {
         this.DateRecorded = DateRecorded;
     }
     

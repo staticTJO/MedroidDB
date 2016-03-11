@@ -4,10 +4,10 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_medroid_domain_DoctorMessages" modelAttribute="doctorMessages" path="/doctormessageses" render="${empty dependencies}" z="EpkNkHvT7EImkH8bTsAZlrBRcVk=">
         <field:select field="doctor" id="c_com_medroid_domain_DoctorMessages_doctor" itemValue="id" items="${doctors}" path="/doctors" required="true" z="k1JNDrORdTEvBi9+gDxGjNG/Vp8="/>
-        <field:datetime dateTimePattern="${doctorMessages_daterecorded_date_format}" field="DateRecorded" id="c_com_medroid_domain_DoctorMessages_DateRecorded" z="/nwzUpHWFPf4ejchYccCAZCYmbI="/>
         <field:checkbox field="isRead" id="c_com_medroid_domain_DoctorMessages_isRead" z="v80lqbODpgWhEvUUITbS0QDpjJs="/>
         <field:input field="messagetxt" id="c_com_medroid_domain_DoctorMessages_messagetxt" z="ltVGRvYAqj3JTfweBJVv0wQBrjs="/>
         <field:input field="PatientID" id="c_com_medroid_domain_DoctorMessages_PatientID" required="true" z="JVqvCw4+BblZfCH+FAVTBE+G2bY="/>
+        <field:input field="DateRecorded" id="c_com_medroid_domain_DoctorMessages_DateRecorded" z="inTe0HEOJSI0zOjZBnpnL9vRIoo="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_DoctorMessages" render="${not empty dependencies}" z="Rq/TqChGCvoIXiTh3X/L3Ilqk7o="/>
 </div>

@@ -11,8 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import org.joda.time.format.DateTimeFormat;
-import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -48,7 +46,6 @@ privileged aspect PatientNotificationsController_Roo_Controller {
     
     @RequestMapping(value = "/{id}", produces = "text/html")
     public String PatientNotificationsController.show(@PathVariable("id") Long id, Model uiModel) {
-        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("patientnotifications", PatientNotifications.findPatientNotifications(id));
         uiModel.addAttribute("itemId", id);
         return "patientnotificationses/show";
@@ -65,7 +62,6 @@ privileged aspect PatientNotificationsController_Roo_Controller {
         } else {
             uiModel.addAttribute("patientnotificationses", PatientNotifications.findAllPatientNotificationses(sortFieldName, sortOrder));
         }
-        addDateTimeFormatPatterns(uiModel);
         return "patientnotificationses/list";
     }
     
@@ -96,13 +92,8 @@ privileged aspect PatientNotificationsController_Roo_Controller {
         return "redirect:/patientnotificationses";
     }
     
-    void PatientNotificationsController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("patientNotifications_daterecorded_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-    }
-    
     void PatientNotificationsController.populateEditForm(Model uiModel, PatientNotifications patientNotifications) {
         uiModel.addAttribute("patientNotifications", patientNotifications);
-        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("patients", Patient.findAllPatients());
     }
     

@@ -4,9 +4,9 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_medroid_domain_PatientMessages" modelAttribute="patientMessages" path="/patientmessageses" versionField="Version" z="M9ydaTQ64yQJRsQGNqJaFAA8FZ4=">
         <field:select field="patient" id="c_com_medroid_domain_PatientMessages_patient" itemValue="id" items="${patients}" path="/patients" required="true" z="qlbv1OEoX98Xbt15oGdtpuHPA2Q="/>
-        <field:datetime dateTimePattern="${patientMessages_daterecorded_date_format}" field="DateRecorded" id="c_com_medroid_domain_PatientMessages_DateRecorded" z="hUOU+UYoGdTKkbT/4BUmLX9aWgI="/>
         <field:checkbox field="isRead" id="c_com_medroid_domain_PatientMessages_isRead" z="oU+bafQ46C/PbQsaMtGttay+Ufs="/>
         <field:input field="messagetxt" id="c_com_medroid_domain_PatientMessages_messagetxt" z="5h2Wlda3+azq9ihZT36mqvYISR8="/>
         <field:input field="DoctorID" id="c_com_medroid_domain_PatientMessages_DoctorID" required="true" z="L98yOPqiOxeLH1MlKt2ilerPkMY="/>
+        <field:input field="DateRecorded" id="c_com_medroid_domain_PatientMessages_DateRecorded" z="2g1bltm8qiilYy9k8TDBh0OuiOk="/>
     </form:update>
 </div>

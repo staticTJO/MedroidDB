@@ -26,7 +26,7 @@ public class DoctorNotifications {
      */
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date DateRecorded;
+    private String DateRecorded;
 
     /**
      */

@@ -5,10 +5,10 @@
     <page:list id="pl_com_medroid_domain_PatientNotifications" items="${patientnotificationses}" z="9lLOeCrkmdzgDCvgTIIy/jDS7kM=">
         <table:table data="${patientnotificationses}" id="l_com_medroid_domain_PatientNotifications" path="/patientnotificationses" z="ancX/eVnuJ71OfbP/OHP7svYIUk=">
             <table:column id="c_com_medroid_domain_PatientNotifications_patient" property="patient" z="1rKLnArQ27x2WdPRFS/s8flWoy8="/>
-            <table:column date="true" dateTimePattern="${patientNotifications_daterecorded_date_format}" id="c_com_medroid_domain_PatientNotifications_DateRecorded" property="dateRecorded" z="kv7SyqoiEZRMtg/5L9Z8F+5lSYM="/>
             <table:column id="c_com_medroid_domain_PatientNotifications_isRead" property="isRead" z="nkQ8NO/KAisEstjNFeWjKSGYAAQ="/>
             <table:column id="c_com_medroid_domain_PatientNotifications_messagetxt" property="messagetxt" z="pk15U3HqVa6XTIvkQIAZ5KhOZZ4="/>
             <table:column id="c_com_medroid_domain_PatientNotifications_DoctorID" property="doctorID" z="xTt/zHrwKxu9amWYaEayKfngGGI="/>
+            <table:column id="c_com_medroid_domain_PatientNotifications_DateRecorded" property="dateRecorded" z="/t/THo6I9gPCD4MBOaEQlHW8emw="/>
         </table:table>
     </page:list>
 </div>
