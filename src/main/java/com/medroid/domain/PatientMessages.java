@@ -24,8 +24,6 @@ public class PatientMessages {
 
     /**
      */
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
     private String DateRecorded;
 
     /**
