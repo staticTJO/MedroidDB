@@ -38,7 +38,8 @@ public class JsonDoctorPatients {
             }
             
            for(int i=0; i < careteam.size(); i++){
-        	   PatientJson.add(careteam.get(i).getPatient().toJson());
+        	   PatientJson.add(careteam.get(i).toJson());
+/*        	   PatientJson.add(careteam.get(i).getPatient().toJson());*/
             }
            
             return new ResponseEntity<String>(PatientJson.toString(),headers,HttpStatus.OK);
