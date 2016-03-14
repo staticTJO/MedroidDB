@@ -5,6 +5,8 @@ package com.medroid.domain;
 
 import com.medroid.domain.MedroidDataOnDemand;
 import com.medroid.domain.Patient;
+import com.medroid.domain.PatientDischarge;
+import com.medroid.domain.PatientStatus;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -66,7 +68,7 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
     }
     
     public void MedroidDataOnDemand.setEstimatedDischargeDate(Patient obj, int index) {
-        String estimatedDischargeDate = "estimatedDischargeDate_" + index;
+        PatientDischarge estimatedDischargeDate = null;
         obj.setEstimatedDischargeDate(estimatedDischargeDate);
     }
     
@@ -111,7 +113,7 @@ privileged aspect MedroidDataOnDemand_Roo_DataOnDemand {
     }
     
     public void MedroidDataOnDemand.setStatus(Patient obj, int index) {
-        String status = "status_" + index;
+        PatientStatus status = null;
         obj.setStatus(status);
     }
     

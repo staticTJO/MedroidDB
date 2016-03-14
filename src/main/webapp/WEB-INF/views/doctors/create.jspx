@@ -10,9 +10,9 @@
         <field:input field="FirstName" id="c_com_medroid_domain_Doctor_FirstName" min="3" required="true" z="eQm2yUYTHadZLbpE3kbKZqeSNW8="/>
         <field:input field="LastName" id="c_com_medroid_domain_Doctor_LastName" min="3" required="true" z="Zs8F7On8DnmyBNcp6VX2GWWD6h8="/>
         <field:input field="Specialty" id="c_com_medroid_domain_Doctor_Specialty" required="true" z="5qfEJmrqqUgVhstV4/AKMxh8jkY="/>
-        <field:input field="status" id="c_com_medroid_domain_Doctor_status" required="true" z="GBDKtlHFjQ6mMBKI3TI74CPZvqk="/>
         <field:simple field="attendingpatients" id="c_com_medroid_domain_Doctor_attendingpatients" messageCode="entity_reference_not_managed" messageCodeAttribute="Careteam" z="cIuLI8xFjKZxr+2D63X5gHPeeSE="/>
         <field:select field="doctorlogin" id="c_com_medroid_domain_Doctor_doctorlogin" itemValue="id" items="${doctors}" path="/doctors" z="y9Gvraqa8YPyF5todK3CjbN4MSQ="/>
+        <field:select field="status" id="c_com_medroid_domain_Doctor_status" itemValue="id" items="${doctorstatuses}" path="/doctorstatuses" z="vBucaN6EYNMIvDlViY7nww47Smk="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_medroid_domain_Doctor" render="${not empty dependencies}" z="cgJyD93Z8XRaN+9wDA4LstR2i50="/>
 </div>

@@ -9,6 +9,7 @@ import com.medroid.domain.DoctorController;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.DoctorMessages;
 import com.medroid.domain.DoctorNotifications;
+import com.medroid.domain.DoctorStatus;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -95,6 +96,7 @@ privileged aspect DoctorController_Roo_Controller {
         uiModel.addAttribute("doctordiagnoses", DoctorDiagnosis.findAllDoctorDiagnoses());
         uiModel.addAttribute("doctormessageses", DoctorMessages.findAllDoctorMessageses());
         uiModel.addAttribute("doctornotificationses", DoctorNotifications.findAllDoctorNotificationses());
+        uiModel.addAttribute("doctorstatuses", DoctorStatus.findAllDoctorStatuses());
     }
     
     String DoctorController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

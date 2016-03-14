@@ -47,6 +47,9 @@
             <menu:item id="i_controller__jsonpatientdoctorsindex_id" messageCode="global_generic" url="/jsonpatientdoctors/index" z="c4pSyFCLjPXDt5D04R/dfw7tp18="/>
             <menu:item id="i_controller__jsondoctorpatientsindex_id" messageCode="global_generic" url="/jsondoctorpatients/index" z="aL5w2ovEX//BzDN5nkQWanS7J00="/>
             <menu:item id="i_controller__jsonpatientdiagnosisindex_id" messageCode="global_generic" url="/jsonpatientdiagnosis/index" z="IRivz9GmBL/TC6xQRPG1VsZ5lwo="/>
+            <menu:item id="i_controller__jsongetdoctorstatusindex_id" messageCode="global_generic" url="/jsongetdoctorstatus/index" z="B9sAZhauMK9gbAfHzLDL1IcCmxs="/>
+            <menu:item id="i_controller__jsongetpatientstatusindex_id" messageCode="global_generic" url="/jsongetpatientstatus/index" z="vZReQxfix8lQb2QonnHya8HIX0w="/>
+            <menu:item id="i_controller__jsongetpatientdischargeindex_id" messageCode="global_generic" url="/jsongetpatientdischarge/index" z="edvdQSipzTpo7LgaFZl10FEPxXw="/>
         </menu:category>
         <menu:category id="c_loguserdoctor" z="yfXPtqaPS2tkPqBV1nJ4AcS4zMQ=">
             <menu:item id="i_loguserdoctor_new" messageCode="global_menu_new" url="/loguserdoctors?form" z="AsWftgw8YmXtptUqUr67ShToORI="/>
@@ -55,6 +58,18 @@
         <menu:category id="c_loguserpatient" z="CD4/Xpxyxr3dpRs5gZLhqe1GxZ0=">
             <menu:item id="i_loguserpatient_new" messageCode="global_menu_new" url="/loguserpatients?form" z="KvU5MjkM2UUbbNvcs2HujI6mKfw="/>
             <menu:item id="i_loguserpatient_list" messageCode="global_menu_list" url="/loguserpatients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Ni9mR3/RLinR1/SplJQPUbdNkXs="/>
+        </menu:category>
+        <menu:category id="c_patientstatus" z="zKMh2m8A23+/Xw16tjpbDJieTZQ=">
+            <menu:item id="i_patientstatus_new" messageCode="global_menu_new" url="/patientstatuses?form" z="g7ZkZmToMOK0gIwunXGwTeq4GbM="/>
+            <menu:item id="i_patientstatus_list" messageCode="global_menu_list" url="/patientstatuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/SRMW7qNY5+gFHvq5URoidDpd/4="/>
+        </menu:category>
+        <menu:category id="c_doctorstatus" z="cTF6ZNvsvxzkkB5oJ1uzjeDjTms=">
+            <menu:item id="i_doctorstatus_new" messageCode="global_menu_new" url="/doctorstatuses?form" z="o6Eq1fMnxzLjSPbtjJqvLkdad60="/>
+            <menu:item id="i_doctorstatus_list" messageCode="global_menu_list" url="/doctorstatuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="9mn3KNeIitJLjhIHV73sTnGYcYs="/>
+        </menu:category>
+        <menu:category id="c_patientdischarge" z="q52StdNH3kknyMc7iUTyayBrfMs=">
+            <menu:item id="i_patientdischarge_new" messageCode="global_menu_new" url="/patientdischarges?form" z="N6xcMOjl5WcILOERbeen2dJNsqg="/>
+            <menu:item id="i_patientdischarge_list" messageCode="global_menu_list" url="/patientdischarges?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rg3GotsV5aP0uWRU/kO3K74DOu4="/>
         </menu:category>
     </menu:menu>
 </div>

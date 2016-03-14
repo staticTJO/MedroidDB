@@ -8,6 +8,7 @@ import com.medroid.domain.Doctor;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.DoctorMessages;
 import com.medroid.domain.DoctorNotifications;
+import com.medroid.domain.DoctorStatus;
 import java.util.Set;
 
 privileged aspect Doctor_Roo_JavaBean {
@@ -68,14 +69,6 @@ privileged aspect Doctor_Roo_JavaBean {
         this.Specialty = Specialty;
     }
     
-    public String Doctor.getStatus() {
-        return this.status;
-    }
-    
-    public void Doctor.setStatus(String status) {
-        this.status = status;
-    }
-    
     public Set<Careteam> Doctor.getAttendingpatients() {
         return this.attendingpatients;
     }
@@ -90,6 +83,14 @@ privileged aspect Doctor_Roo_JavaBean {
     
     public void Doctor.setDoctorlogin(Doctor doctorlogin) {
         this.doctorlogin = doctorlogin;
+    }
+    
+    public DoctorStatus Doctor.getStatus() {
+        return this.status;
+    }
+    
+    public void Doctor.setStatus(DoctorStatus status) {
+        this.status = status;
     }
     
 }

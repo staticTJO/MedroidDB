@@ -260,3 +260,42 @@ web mvc json all
 web mvc controller --class ~.domain.JsonPatientDiagnosis 
 web mvc all --package com.medroid.domain
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-03-11 01:39:55
+entity jpa --class com.medroid.domain.DoctorStatus
+focus --class ~.domain.Doctor
+focus --class ~.domain.DoctorStatus
+field number --fieldName doctorID --type int  
+field string --fieldName status
+entity jpa --class ~.domain.PatientStatus
+field number --fieldName patientID --type int 
+field string --fieldName status 
+entity jpa --class ~.domain.PatientDischarge
+field number --fieldName patientID --type int 
+field string --fieldName estimatedDischargeDate 
+web mvc controller --class ~.domain.DoctorStatus 
+web mvc controller --class ~.domain.PatientStatus 
+entity jpa --class ~.domain.DoctorStatus
+entity jpa --class ~.domain.PatientStatus
+// [failed] entity jpa --class ~.domain.PatientDischarge
+focus --class ~.domain.PatientStatus
+field number --fieldName patientID --type int
+field string --fieldName status 
+focus --class ~.domain.DoctorStatus
+field number --fieldName doctorID --type int
+field string --fieldName status 
+json all 
+web mvc all --package com.medroid.domain
+web mvc json all  
+web mvc json all 
+json all 
+web mvc json add --jsonObject ~.domain.JsonGetPatientStatus
+web mvc scaffold --class ~.domain.JsonGetDoctorStatus 
+web mvc controller --class ~.domain.JsonGetDoctorStatus
+web mvc controller --class ~.domain.JsonGetPatientStatus
+web mvc controller --class ~.domain.JsonGetPatientDischarge
+web mvc controller --class ~.domain.JsonGetPatientDischarge
+focus --class ~.domain.Doctor
+field reference --fieldName status --type ~.domain.DoctorStatus --cardinality ONE_TO_ONE 
+field reference --fieldName status --type ~.domain.DoctorStatus --cardinality ONE_TO_ONE 
+focus --class ~.domain.Patient
+field reference --fieldName status --type ~.domain.PatientStatus --cardinality ONE_TO_ONE 
+field reference --fieldName estimatedDischargeDate --type ~.domain.PatientDischarge --cardinality ONE_TO_ONE 

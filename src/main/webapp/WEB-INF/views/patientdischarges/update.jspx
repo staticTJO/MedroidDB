@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_medroid_domain_PatientDischarge" modelAttribute="patientDischarge" path="/patientdischarges" versionField="Version" z="F65I+c8pHrqBDaj7mOaZWxbrwyk=">
+        <field:input field="patientID" id="c_com_medroid_domain_PatientDischarge_patientID" z="HE6pGvdPjuORdUTVt6hR6EP15Mc="/>
+        <field:input field="estimatedDischargeDate" id="c_com_medroid_domain_PatientDischarge_estimatedDischargeDate" z="5FllPL/TWye3Pdo0msqI20hYg5w="/>
+    </form:update>
+</div>

@@ -7,9 +7,11 @@ import com.medroid.domain.Careteam;
 import com.medroid.domain.DoctorDiagnosis;
 import com.medroid.domain.Patient;
 import com.medroid.domain.PatientAllergies;
+import com.medroid.domain.PatientDischarge;
 import com.medroid.domain.PatientMedications;
 import com.medroid.domain.PatientMessages;
 import com.medroid.domain.PatientNotifications;
+import com.medroid.domain.PatientStatus;
 import java.util.Set;
 
 privileged aspect Patient_Roo_JavaBean {
@@ -134,14 +136,6 @@ privileged aspect Patient_Roo_JavaBean {
         this.Bloodtype = Bloodtype;
     }
     
-    public String Patient.getStatus() {
-        return this.status;
-    }
-    
-    public void Patient.setStatus(String status) {
-        this.status = status;
-    }
-    
     public String Patient.getHC() {
         return this.HC;
     }
@@ -174,11 +168,19 @@ privileged aspect Patient_Roo_JavaBean {
         this.patientlogin = patientlogin;
     }
     
-    public String Patient.getEstimatedDischargeDate() {
+    public PatientStatus Patient.getStatus() {
+        return this.status;
+    }
+    
+    public void Patient.setStatus(PatientStatus status) {
+        this.status = status;
+    }
+    
+    public PatientDischarge Patient.getEstimatedDischargeDate() {
         return this.estimatedDischargeDate;
     }
     
-    public void Patient.setEstimatedDischargeDate(String estimatedDischargeDate) {
+    public void Patient.setEstimatedDischargeDate(PatientDischarge estimatedDischargeDate) {
         this.estimatedDischargeDate = estimatedDischargeDate;
     }
     

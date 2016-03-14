@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="patientdischarges/list">
+        <put-attribute name="body" value="/WEB-INF/views/patientdischarges/list.jspx"/>
+    </definition>
+<definition extends="default" name="patientdischarges/show">
+        <put-attribute name="body" value="/WEB-INF/views/patientdischarges/show.jspx"/>
+    </definition>
+<definition extends="default" name="patientdischarges/create">
+        <put-attribute name="body" value="/WEB-INF/views/patientdischarges/create.jspx"/>
+    </definition>
+<definition extends="default" name="patientdischarges/update">
+        <put-attribute name="body" value="/WEB-INF/views/patientdischarges/update.jspx"/>
+    </definition>
+</tiles-definitions>

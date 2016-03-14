@@ -102,11 +102,6 @@ public class Patient {
     /**
      */
     @NotNull
-    private String status;
-
-    /**
-     */
-    @NotNull
     private String HC;
 
     /**
@@ -126,5 +121,11 @@ public class Patient {
 
     /**
      */
-    private String estimatedDischargeDate;
+    @OneToOne
+    private PatientStatus status;
+
+    /**
+     */
+    @OneToOne
+    private PatientDischarge estimatedDischargeDate;
 }

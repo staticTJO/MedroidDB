@@ -57,11 +57,6 @@ public class Doctor {
 
     /**
      */
-    @NotNull
-    private String status;
-
-    /**
-     */
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "doctor")
     private Set<Careteam> attendingpatients = new HashSet<Careteam>();
 
@@ -69,4 +64,9 @@ public class Doctor {
      */
     @OneToOne
     private Doctor doctorlogin;
+
+    /**
+     */
+    @OneToOne
+    private DoctorStatus status;
 }

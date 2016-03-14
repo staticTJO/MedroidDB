@@ -14,7 +14,7 @@ privileged aspect Patient_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Patient.entityManager;
     
-    public static final List<String> Patient.fieldNames4OrderClauseFilter = java.util.Arrays.asList("PatientMessages", "PatientNotifications", "PatientMedications", "PatientAllergies", "Diagnosis", "patientID", "FirstName", "LastName", "MiddleName", "Age", "Sex", "DOB", "City", "Prov", "Bloodtype", "status", "HC", "SymptomDesc", "AttendingDoctors", "patientlogin", "estimatedDischargeDate");
+    public static final List<String> Patient.fieldNames4OrderClauseFilter = java.util.Arrays.asList("PatientMessages", "PatientNotifications", "PatientMedications", "PatientAllergies", "Diagnosis", "patientID", "FirstName", "LastName", "MiddleName", "Age", "Sex", "DOB", "City", "Prov", "Bloodtype", "HC", "SymptomDesc", "AttendingDoctors", "patientlogin", "status", "estimatedDischargeDate");
     
     public static final EntityManager Patient.entityManager() {
         EntityManager em = new Patient().entityManager;

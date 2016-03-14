@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_medroid_domain_PatientStatus" object="${patientstatus}" path="/patientstatuses" z="AydE80R7GCF31iNenu688nNLHnI=">
+        <field:display field="patientID" id="s_com_medroid_domain_PatientStatus_patientID" object="${patientstatus}" z="y6veFKtl606OoulQ372A/dE6RB0="/>
+        <field:display field="status" id="s_com_medroid_domain_PatientStatus_status" object="${patientstatus}" z="aiNENdBHng0pEPngj//MrUJs8WU="/>
+    </page:show>
+</div>
